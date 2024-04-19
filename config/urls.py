@@ -23,9 +23,9 @@ class BothHttpAndHttpsSchemaGenerator(OpenAPISchemaGenerator):
 
 schema_view = get_schema_view(
     openapi.Info(
-        "ABSOLVO BONA FIDES",
+        "TTL Logistics",
         "v1.0",
-        'Project name: "ABSOLVO BONA FIDES"',
+        'Project name: "TTL Logistics"',
         contact=openapi.Contact(
             name="technovision.uz",
             url="https://technovision.uz",
