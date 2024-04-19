@@ -5,11 +5,9 @@ from django.utils.translation import gettext_lazy as _
 from modeltranslation.admin import TranslationAdmin
 from tinymce.widgets import TinyMCE
 
-from .models import About, ContactInformation, Partner, Review
-from .models import TeamMember
+from .models import About, ContactInformation, Review
 from .models.contact import ContactFormView
 from .models.news import News
-from .models.publications import Publication
 from .models.service import Service
 
 
@@ -33,39 +31,9 @@ class AboutAdmin(TranslationAdmin):
 admin.site.register(About, AboutAdmin)
 
 
-class TeamMemberAdmin(TranslationAdmin):
-    list_display = ('first_name', 'last_name', 'position', 'image_preview')
-    search_fields = ('first_name', 'last_name', 'position', 'sphere_of_activity', 'education', 'scientific_degree')
-    formfield_overrides = {
-        models.TextField: {'widget': TinyMCE()},
-    }
-    prepopulated_fields = {'slug': ('first_name',)}
-
-    def image_preview(self, obj):
-        if obj.image:
-            return format_html('<img src="{}" alt="{}" height="50"/>', obj.image.url,
-                               f"{obj.first_name} {obj.last_name}")
-        return 'No Image'
-
-    image_preview.allow_tags = True
-    image_preview.short_description = 'Изображение'
 
 
-admin.site.register(TeamMember, TeamMemberAdmin)
 
-
-class PublicationAdmin(TranslationAdmin):
-    list_display = ('title', 'team_member')
-    list_filter = ('team_member',)
-    prepopulated_fields = {"slug": ("title",)}  # new
-
-    # Add TinyMCE editor for the 'content' field
-    formfield_overrides = {
-        models.TextField: {'widget': TinyMCE()},
-    }
-
-
-admin.site.register(Publication, PublicationAdmin)
 
 
 class NewsAdmin(TranslationAdmin):
@@ -179,24 +147,7 @@ class ContactFormViewAdmin(admin.ModelAdmin):
 admin.site.register(ContactFormView, ContactFormViewAdmin)
 
 
-class PartnerAdmin(admin.ModelAdmin):
-    list_display = ('title', 'image', 'url')
-    search_fields = ('title', 'url')
-    list_filter = ('title',)
-    list_per_page = 20
 
-    fieldsets = (
-        (_('Основная информация'), {
-            'fields': ('title', 'image', 'url'),
-        }),
-    )
-
-    class Meta:
-        verbose_name = _("Партнер")
-        verbose_name_plural = _("Партнеры")
-
-
-admin.site.register(Partner, PartnerAdmin)
 
 
 class ReviewAdmin(admin.ModelAdmin):

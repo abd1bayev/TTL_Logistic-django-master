@@ -2,7 +2,7 @@ from django.contrib.contenttypes.models import ContentType
 from django.db.models import Q
 from rest_framework import generics
 
-from projects.models import Publication, Service, News, About
+from projects.models import  Service, News, About
 from projects.serializers import SearchSerializer
 from projects.utils import SearchResultsPagination
 

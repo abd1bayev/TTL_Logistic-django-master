@@ -174,13 +174,13 @@ REST_FRAMEWORK = {
 
 JAZZMIN_SETTINGS = {
     "site_header": "Welcome Admin",
-    "site_brand": "ABSOLVO BONA FIDES",
+    "site_brand": "TTL Logistics",
     "site_logo": "logo.png",  # Update this path if needed
     "login_logo": "logo.png",  # Update this path if needed
     "login_logo_dark": None,
     "site_icon": "logo.png",  # Update this path if needed
-    "welcome_sign": "ABSOLVO BONA FIDES",
-    "copyright": "ABSOLVO BONA FIDES",
+    "welcome_sign": "Welcome TTL Logistics",
+    "copyright": "TTL Logistics",
     "user_avatar": None,
     "show_ui_builder": True,
     "topmenu_links": [],
