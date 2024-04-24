@@ -1,7 +1,6 @@
 from django.urls import path
+from projects.views.reviews import ReviewListAPIView 
 
-from projects.views import ContactInformationView, \
-    SearchResultsView, ReviewListAPIView
 from projects.views.about import AboutListView
 from projects.views.contact import ContactInformationView
 from projects.views.blog import BlogListAPIView, BlogRetrieveView
@@ -24,6 +23,5 @@ urlpatterns = [
     path('services/<slug:slug>/', ServiceRetrieveView.as_view(), name='service-retrieve'),
 
     path('contact/', ContactInformationView.as_view(), name='contact-list-create'),
-    path('search/', SearchResultsView.as_view(), name='search-results'),
     path('reviews/', ReviewListAPIView.as_view(), name="reviews"),
 ]

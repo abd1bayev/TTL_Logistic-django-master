@@ -1,12 +1,15 @@
 from rest_framework import serializers
+from projects.models.reviews import Review,Review_Image
 
+class ReviewImageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Review_Image
+        fields = ['image']
 
-class ReviewSerializer(serializers.Serializer):
-    service_id = serializers.IntegerField()
-    full_name = serializers.CharField(max_length=50)
-    description = serializers.CharField()
-    file = serializers.FileField()
-    is_active = serializers.BooleanField()
-    guid = serializers.UUIDField(read_only=True)
-    created_time = serializers.DateTimeField(read_only=True)
-    updated_time = serializers.DateTimeField(read_only=True)
+class ReviewSerializer(serializers.ModelSerializer):
+    images = ReviewImageSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = Review
+        fields = ['id', 'service', 'phone_number', 'title', 'index_code', 'name', 'surname', 'address', 'note', 'description', 'mail', 'images']
+        read_only_fields = ['id',]

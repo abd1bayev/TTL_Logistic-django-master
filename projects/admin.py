@@ -7,7 +7,7 @@ from tinymce.widgets import TinyMCE
 
 from .models import About, ContactInformation, Review, About_Image
 from .models.blog import Blog, Blog_Image  
-from .models.service import Service
+from .models.service import Service,ServiceImage
 
 
 class AboutImageInline(admin.TabularInline):
@@ -90,49 +90,55 @@ class ContactInformationAdmin(admin.ModelAdmin):
 admin.site.register(ContactInformation, ContactInformationAdmin)
 
 
-class ServiceAdmin(TranslationAdmin):
-    # Specify which fields to display in the admin list view
-    list_display = ('title', 'display_short_description', 'image_preview', 'created_time', 'updated_time')
-    prepopulated_fields = {"slug": ("title",)}
+# class ServiceAdmin(admin.ModelAdmin):
+#     # Specify which fields to display in the admin list view
+#     list_display = ('title', 'display_short_description', 'display_images', 'created_time', 'updated_time')
+#     prepopulated_fields = {"slug": ("title",)}
 
-    # Add TinyMCE editor for the 'descriptions' field
-    formfield_overrides = {
-        models.TextField: {'widget': TinyMCE()},
-    }
+#     # Add TinyMCE editor for the 'descriptions' field
+#     formfield_overrides = {
+#         models.TextField: {'widget': TinyMCE()},
+#     }
 
-    # Define a method to display a truncated version of descriptions in the admin list view
-    def display_short_description(self, obj):
-        # Use format_html to mark the short_description as safe HTML
-        return format_html(obj.descriptions)
+#     # Define a method to display a truncated version of descriptions in the admin list view
+#     def display_short_description(self, obj):
+#         # Use format_html to mark the short_description as safe HTML
+#         return format_html(obj.descriptions[:100])  # Display first 100 characters of descriptions
 
-    def image_preview(self, obj):
-        if obj.image:
-            return format_html('<img src="{}" alt="{}" height="150"/>', obj.image.url, "Image Preview")
-        return 'No Image'
+#     # Define a method to display images in the admin list view
+#     def display_images(self, obj):
+#         return ', '.join([str(image) for image in obj.images.all()])  # Display image filenames
 
-    image_preview.allow_tags = True
-    image_preview.short_description = 'Изображение'
+#     display_images.short_description = 'Images'  # Custom column name
+#     display_short_description.short_description = 'Description'  # Custom column name
 
-    display_short_description.short_description = 'Описание'
+#     # Add filtering options
+#     list_filter = ('created_time', 'updated_time')
 
-    # Add filtering options
-    list_filter = ('created_time', 'updated_time')
-
-    # Add search fields
-    search_fields = ('title', 'descriptions')
+#     # Add search fields
+#     search_fields = ('title', 'descriptions')
 
 
-# Register the Service model with the custom admin class
+# # Register the Service model with the custom admin class
+# admin.site.register(Service, ServiceAdmin)
+
+
+
+class ServiceImageInline(admin.TabularInline):
+    model = ServiceImage
+    extra = 1
+
+class ServiceAdmin(admin.ModelAdmin):
+    inlines = [ServiceImageInline]
+    prepopulated_fields = {'slug': ('title',)}
+
 admin.site.register(Service, ServiceAdmin)
-
-
-
-
+admin.site.register(ServiceImage)
 
 
 
 class ReviewAdmin(admin.ModelAdmin):
-    list_display = ('full_name', 'service', 'is_active')
+    list_display = ('title', 'service')
 
 
 admin.site.register(Review, ReviewAdmin)
