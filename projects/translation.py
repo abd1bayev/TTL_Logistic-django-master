@@ -1,7 +1,7 @@
 from modeltranslation.translator import TranslationOptions, register
 
 from projects.models import (
-     News, About, Service, Review
+     Blog, About, Service, Review
 )
 
 
@@ -9,12 +9,12 @@ from projects.models import (
 
 @register(About)
 class AboutTranslationOptions(TranslationOptions):
-    fields = ('title', 'content')
+    fields = ('content',)
 
 
-@register(News)
-class NewsTranslationOptions(TranslationOptions):
-    fields = ('title', 'short_description', 'long_description',)
+@register(Blog)
+class BlogTranslationOptions(TranslationOptions):
+    fields = ('title', 'description', 'country', 'address', 'contact_information')
 
 
 

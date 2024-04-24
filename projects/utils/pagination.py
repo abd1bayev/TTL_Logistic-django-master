@@ -17,7 +17,7 @@ class PublicationPagination(CustomPagination):
     pass
 
 
-class NewsPagination(CustomPagination):
+class BlogPagination(CustomPagination):
     pass
 
 

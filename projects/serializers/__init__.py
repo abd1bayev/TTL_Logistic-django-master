@@ -1,5 +1,5 @@
 from .about import AboutSerializer
 from .contact import ContactInformationSerializer
-from .news import NewsSerializer
+from .blog import BlogSerializer
 from .search import SearchSerializer
 from .reviews import ReviewSerializer

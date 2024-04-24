@@ -5,75 +5,71 @@ from django.utils.translation import gettext_lazy as _
 from modeltranslation.admin import TranslationAdmin
 from tinymce.widgets import TinyMCE
 
-from .models import About, ContactInformation, Review
-from .models.contact import ContactFormView
-from .models.news import News
+from .models import About, ContactInformation, Review, About_Image
+from .models.blog import Blog, Blog_Image  
 from .models.service import Service
 
 
-class AboutAdmin(TranslationAdmin):
-    # Specify which fields to display in the admin list view
-    list_display = ('title', 'created_at', 'updated_at')
+class AboutImageInline(admin.TabularInline):
+    model = About_Image
+    extra = 1
 
-    # Add the TinyMCE editor for the 'content' field
+@admin.register(About)
+class AboutAdmin(admin.ModelAdmin):
+    list_display = ('content',)
+    search_fields = ('content',)
+  # Custom column name
+
+    inlines = [AboutImageInline]
+
+admin.site.register(About_Image)  # Register the AboutImage model as well
+
+
+
+
+
+
+class ImageInline(admin.TabularInline):
+    model = Blog_Image
+    extra = 1  # Number of empty forms to display
+
+class BlogAdmin(admin.ModelAdmin):
+    list_display = ('title', 'formatted_date_created')  # Customize the displayed fields
+
+    def formatted_date_created(self, obj):
+        return obj.created_time.strftime('%Y-%m-%d %H:%M:%S')  # Assuming created_time is the field name
+    formatted_date_created.short_description = _('Date Created')  # Custom column name
+
+    search_fields = ('title', 'description', 'country', 'address')  # Add fields to search
+    prepopulated_fields = {"slug": ("title",)}  # Automatically populate the slug from the title
+
     formfield_overrides = {
-        models.TextField: {'widget': TinyMCE()},
+        models.TextField: {'widget': TinyMCE()},  # Use TinyMCE for text fields
     }
 
-    # Specify fields to use for filtering in the admin list view
-    list_filter = ('created_at', 'updated_at')
+    # def image_preview(self, obj):
+    #     # Display a preview of the first image if available
+    #     if obj.images.exists():
+    #         first_image = obj.images.first().image.url  # Assuming Image has 'image' field
+    #         return format_html('<img src="{}" alt="Image Preview" height="100"/>', first_image)
+    #     return _('No Image')
 
-    # Specify fields to use for searching in the admin list view
-    search_fields = ('title', 'content')
+    # image_preview.short_description = _('Image Preview')  # Custom column name
 
+    inlines = [ImageInline]  # Add ImageInline to allow adding images inline with Blog
 
-# Register the About model with the custom AboutAdmin
-admin.site.register(About, AboutAdmin)
-
-
-
-
-
-
-
-class NewsAdmin(TranslationAdmin):
-    list_display = ('title', 'display_short_description', 'image_preview')  # Include the custom method
-    search_fields = ('title', 'short_description', 'long_description')
-    prepopulated_fields = {"slug": ("title",)}
-
-    formfield_overrides = {
-        models.TextField: {'widget': TinyMCE()},
-    }
-
-    def display_short_description(self, obj):
-        # Use format_html to mark the short_description as safe HTML
-        return format_html(obj.short_description)
-
-    def image_preview(self, obj):
-        if obj.image:
-            return format_html('<img src="{}" alt="{}" height="150"/>', obj.image.url, "Image Preview")
-        return 'No Image'
-
-    image_preview.allow_tags = True
-    image_preview.short_description = 'Изображение'
-
-    display_short_description.short_description = 'Short Description'  # Custom column name
-
-
-admin.site.register(News, NewsAdmin)
-
+admin.site.register(Blog, BlogAdmin)
 
 class ContactInformationAdmin(admin.ModelAdmin):
     list_display = ('address', 'phone_number', 'email')
     search_fields = ('address', 'phone_number', 'email', 'landmark')
-    list_filter = ('transportation',)
 
     fieldsets = (
-        ('Контактные данные', {
-            'fields': ('address', 'phone_number', 'email')
+        (_('Contact Data'), {
+            'fields': ('country', 'city', 'address', 'phone_number', 'email')
         }),
-        ('Информация о местоположении', {
-            'fields': ('landmark', 'transportation')
+        (_('Location Information'), {
+            'fields': ('landmark', 'latitude', 'longitude')
         }),
     )
 
@@ -90,7 +86,6 @@ class ContactInformationAdmin(admin.ModelAdmin):
         if obj is not None:
             return ContactInformation.objects.filter(address=obj.address).exists()
         return super().has_change_permission(request, obj)
-
 
 admin.site.register(ContactInformation, ContactInformationAdmin)
 
@@ -131,20 +126,6 @@ class ServiceAdmin(TranslationAdmin):
 admin.site.register(Service, ServiceAdmin)
 
 
-class ContactFormViewAdmin(admin.ModelAdmin):
-    # Specify which fields to display in the admin list view
-    list_display = ('first_name', 'last_name', 'email', 'message')
-
-    # Add the TinyMCE editor for the 'message' field
-    formfield_overrides = {
-        models.TextField: {'widget': TinyMCE()},
-    }
-
-    # Optionally, you can specify fields to search on in the admin interface
-    search_fields = ('first_name', 'last_name', 'email')
-
-
-admin.site.register(ContactFormView, ContactFormViewAdmin)
 
 
 

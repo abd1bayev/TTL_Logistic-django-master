@@ -2,15 +2,15 @@ from django.shortcuts import get_object_or_404
 from rest_framework import generics
 from rest_framework.response import Response
 
-from projects.models import News
-from projects.serializers.news import NewsSerializer
-from projects.utils import NewsPagination
+from projects.models import Blog
+from projects.serializers.blog import BlogSerializer
+from projects.utils import BlogPagination
 
 
-class NewsListAPIView(generics.ListAPIView):
-    queryset = News.objects.all()
-    serializer_class = NewsSerializer
-    pagination_class = NewsPagination
+class BlogListAPIView(generics.ListAPIView):
+    queryset = Blog.objects.all()
+    serializer_class = BlogSerializer
+    pagination_class = BlogPagination
 
     def list(self, request, *args, **kwargs):
         queryset = self.filter_queryset(self.get_queryset())
@@ -25,9 +25,9 @@ class NewsListAPIView(generics.ListAPIView):
         return Response(serializer.data)
 
 
-class NewsRetrieveView(generics.RetrieveAPIView):
-    queryset = News.objects.all()
-    serializer_class = NewsSerializer
+class BlogRetrieveView(generics.RetrieveAPIView):
+    queryset = Blog.objects.all()
+    serializer_class = BlogSerializer
 
     def get_object(self):
         slug = self.kwargs['slug']  # Get the slug from the URL
