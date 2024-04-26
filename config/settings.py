@@ -9,6 +9,7 @@ DEBUG = True
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-px!2^!*=(b_=@(dg%ocj843#rgna-%m-@u%ph$u@*xqnde()59'
+ALLOWED_HOSTS = ["*", "ttl-logistics.uz"]
 
 # Application definition
 BASE_APPS = [
@@ -30,8 +31,6 @@ THIRD_PARTY_APPS = [
     "corsheaders",
     "drf_yasg",
     'tinymce',
-    # "modeltranslation",
-    # "mptt",
 ]
 
 LOCAL_APPS = [
@@ -144,17 +143,36 @@ LOCALE_PATHS = [
     BASE_DIR.parent / 'locale'
  ]
 
+
+
+CSRF_TRUSTED_ORIGINS = ["https://ttl-logistics.uz",]
+CORS_ALLOWED_ORIGINS = ["https://ttl-logistics.uz",]
+CSRF_COOKIE_SECURE = True
+SECURE_HSTS_SECONDS = 60 * 60 * 24 * 7 * 52  # one year
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SESSION_COOKIE_SECURE = True
+SECURE_HSTS_PRELOAD = True
+CORS_ALLOW_ALL_ORIGINS = False
+CORS_ALLOW_CREDENTIALS = False
+CORS_ORIGIN_ALLOW_ALL = False
+
+
+
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = "/static/"
-STATIC_ROOT = os.path.join(BASE_DIR.parent, "static_files")
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR.parent, 'static'),
-]
 
-MEDIA_URL = "/media/"
-MEDIA_ROOT = os.path.join(BASE_DIR.parent, "media")
+
+
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
+
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/') # 'data' is my media folder
+MEDIA_URL = '/media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -237,17 +255,4 @@ TINYMCE_DEFAULT_CONFIG = {
     'toolbar': 'undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | fontsizeselect | fontselect',
 }
 
-# SMTP Mail service with decouple
-EMAIL_BACKEND = 'django_smtp_ssl.SSLEmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'useremailsendernew@gmail.com'
-EMAIL_HOST_PASSWORD = 'rzuhcmlxujjrffui'
-EMAIL_PORT = 465
-EMAIL_USE_TLS = True
-EMAIL_USE_SSL = False
-# EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
-# EMAIL_HOST=smtp.gmail.com
-# EMAIL_PORT=587
-# EMAIL_USE_TLS=True
-# EMAIL_HOST_USER=abduqulovabdulla3108@gmail.com
-# EMAIL_HOST_PASSWORD=mlgarerqmwnxnjsq
+

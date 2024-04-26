@@ -22,6 +22,5 @@ urlpatterns = [
     path('services/', ServiceListAPIView.as_view(), name='service-list'),
     path('services/<slug:slug>/', ServiceRetrieveView.as_view(), name='service-retrieve'),
 
-    path('contact/', ContactInformationView.as_view(), name='contact-list-create'),
     path('reviews/', ReviewListAPIView.as_view(), name="reviews"),
 ]

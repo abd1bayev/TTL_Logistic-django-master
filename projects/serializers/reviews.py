@@ -4,10 +4,10 @@ from projects.models.reviews import Review,Review_Image
 class ReviewImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = Review_Image
-        fields = ['image']
+        fields = ['id','image']
 
 class ReviewSerializer(serializers.ModelSerializer):
-    images = ReviewImageSerializer(many=True, read_only=True)
+    images = ReviewImageSerializer(many=True, source='images_review')
 
     class Meta:
         model = Review

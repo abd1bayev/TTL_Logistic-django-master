@@ -19,6 +19,9 @@ class AboutAdmin(admin.ModelAdmin):
     list_display = ('content',)
     search_fields = ('content',)
   # Custom column name
+    formfield_overrides = {
+    models.TextField: {'widget': TinyMCE()},  # Use TinyMCE for text fields
+}
 
     inlines = [AboutImageInline]
 
@@ -90,55 +93,68 @@ class ContactInformationAdmin(admin.ModelAdmin):
 admin.site.register(ContactInformation, ContactInformationAdmin)
 
 
-# class ServiceAdmin(admin.ModelAdmin):
-#     # Specify which fields to display in the admin list view
-#     list_display = ('title', 'display_short_description', 'display_images', 'created_time', 'updated_time')
-#     prepopulated_fields = {"slug": ("title",)}
-
-#     # Add TinyMCE editor for the 'descriptions' field
-#     formfield_overrides = {
-#         models.TextField: {'widget': TinyMCE()},
-#     }
-
-#     # Define a method to display a truncated version of descriptions in the admin list view
-#     def display_short_description(self, obj):
-#         # Use format_html to mark the short_description as safe HTML
-#         return format_html(obj.descriptions[:100])  # Display first 100 characters of descriptions
-
-#     # Define a method to display images in the admin list view
-#     def display_images(self, obj):
-#         return ', '.join([str(image) for image in obj.images.all()])  # Display image filenames
-
-#     display_images.short_description = 'Images'  # Custom column name
-#     display_short_description.short_description = 'Description'  # Custom column name
-
-#     # Add filtering options
-#     list_filter = ('created_time', 'updated_time')
-
-#     # Add search fields
-#     search_fields = ('title', 'descriptions')
-
-
-# # Register the Service model with the custom admin class
-# admin.site.register(Service, ServiceAdmin)
-
-
 
 class ServiceImageInline(admin.TabularInline):
     model = ServiceImage
     extra = 1
 
 class ServiceAdmin(admin.ModelAdmin):
+    # Specify which fields to display in the admin list view
     inlines = [ServiceImageInline]
-    prepopulated_fields = {'slug': ('title',)}
 
+    list_display = ('title', 'display_short_description', 'display_images', 'created_time', 'updated_time')
+    prepopulated_fields = {"slug": ("title",)}
+
+    # Add TinyMCE editor for the 'descriptions' field
+    formfield_overrides = {
+        models.TextField: {'widget': TinyMCE()},
+    }
+
+
+    def display_short_description(self, obj):
+        # Use format_html to mark the short_description as safe HTML
+        return format_html(obj.descriptions)
+
+    # Define a method to display images in the admin list view
+    def display_images(self, obj, size=25):
+        image_tags = [f'<img src="{image.image.url}" alt="Image {image.id}" width="{100}" height="{100}">' for image in obj.images_service.all()]
+        return format_html(''.join(image_tags))
+
+    display_images.short_description = 'Images'  # Custom column name
+    display_short_description.short_description = 'Description'  # Custom column name
+
+    # Add filtering options
+    list_filter = ('created_time', 'updated_time')
+
+    # Add search fields
+    search_fields = ('title', 'descriptions')
+
+
+
+# Register the Service model with the custom admin class
 admin.site.register(Service, ServiceAdmin)
+
 admin.site.register(ServiceImage)
+
+
+# class ServiceImageInline(admin.TabularInline):
+#     model = ServiceImage
+#     extra = 1
+
+# class ServiceAdmin(admin.ModelAdmin):
+#     inlines = [ServiceImageInline]
+#     prepopulated_fields = {'slug': ('title',)}
+
+# admin.site.register(Service, ServiceAdmin)
+# admin.site.register(ServiceImage)
 
 
 
 class ReviewAdmin(admin.ModelAdmin):
     list_display = ('title', 'service')
 
+    formfield_overrides = {
+        models.TextField: {'widget': TinyMCE()},
+    }
 
 admin.site.register(Review, ReviewAdmin)

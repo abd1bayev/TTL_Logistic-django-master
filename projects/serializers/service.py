@@ -6,10 +6,10 @@ from projects.models.service import Service,ServiceImage
 class ServiceImageSerializer(serializers.ModelSerializer):
     class Meta:
         model = ServiceImage
-        fields = ['image']
+        fields = ['id','image']
 
 class ServiceSerializer(serializers.ModelSerializer):
-    images = ServiceImageSerializer(many=True, read_only=True)
+    images = ServiceImageSerializer(many=True, source='images_service')
 
     class Meta:
         model = Service
