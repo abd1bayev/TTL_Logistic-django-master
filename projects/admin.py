@@ -5,7 +5,7 @@ from django.utils.translation import gettext_lazy as _
 from modeltranslation.admin import TranslationAdmin
 from tinymce.widgets import TinyMCE
 
-from .models import About, ContactInformation, Review, About_Image
+from .models import About, ContactInformation, Review, About_Image, Review_Image
 from .models.blog import Blog, Blog_Image  
 from .models.service import Service,ServiceImage
 
@@ -148,13 +148,24 @@ admin.site.register(ServiceImage)
 # admin.site.register(Service, ServiceAdmin)
 # admin.site.register(ServiceImage)
 
-
+class ReviewImageInline(admin.TabularInline):
+    model = Review_Image
+    extra = 1
 
 class ReviewAdmin(admin.ModelAdmin):
-    list_display = ('title', 'service')
+    inlines = [ReviewImageInline]
+
+    list_display = ('title', 'service', 'display_images')
 
     formfield_overrides = {
         models.TextField: {'widget': TinyMCE()},
     }
+    
+    def display_images(self, obj, size=25):
+        image_tags = [f'<img src="{image.image.url}" alt="Image {image.id}" width="{100}" height="{100}">' for image in obj.images_review.all()]
+        return format_html(''.join(image_tags))
+
+    display_images.short_description = 'Images'  # Custom column name
 
 admin.site.register(Review, ReviewAdmin)
+admin.site.register(Review_Image)

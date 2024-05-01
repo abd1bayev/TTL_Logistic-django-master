@@ -1,39 +1,26 @@
-from rest_framework import generics, permissions,status
-from projects.models import Review
-from projects.serializers import ReviewSerializer,ReviewImageSerializer
+# views.py
+from rest_framework import generics, permissions, status
 from rest_framework.response import Response
+from projects.models import Review, Review_Image
+from projects.serializers import ReviewSerializer, ReviewImageSerializer
 
 class ReviewListAPIView(generics.ListCreateAPIView):
     queryset = Review.objects.all()
     serializer_class = ReviewSerializer
-
-    def list(self, request, *args, **kwargs):
-        queryset = self.filter_queryset(self.get_queryset())
-        serializer = self.get_serializer(queryset, many=True)
-        return Response(serializer.data)
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
     def create(self, request, *args, **kwargs):
-        # Create a mutable copy of the immutable QueryDict
-        mutable_data = request.data.copy()
-        
-        # Extract image data from request
-        image_data = mutable_data.pop('image', None)
-        
-        # Serialize review data
-        serializer = self.get_serializer(data=mutable_data)
-        if serializer.is_valid():
-            # Save review data
-            review_instance = serializer.save()
-            
-            # Save image if provided
-            if image_data:
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        review_instance = serializer.save()
+
+        # Process images if available
+        images_data = request.data.getlist('images')
+        if images_data:
+            for image_data in images_data:
                 image_serializer = ReviewImageSerializer(data={'review': review_instance.id, 'image': image_data})
-                if image_serializer.is_valid():
-                    image_serializer.save()
-                else:
-                    review_instance.delete()  # Rollback the review creation if image serialization fails
-                    return Response(image_serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-            
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+                image_serializer.is_valid(raise_exception=True)
+                image_serializer.save()
+
+        headers = self.get_success_headers(serializer.data)
+        return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
