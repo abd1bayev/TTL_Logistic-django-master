@@ -1,26 +1,21 @@
 # views.py
 from rest_framework import generics, permissions, status
 from rest_framework.response import Response
-from projects.models import Review, Review_Image
-from projects.serializers import ReviewSerializer, ReviewImageSerializer
+from projects.models import Review, Image
+from projects.serializers import ReviewSerializer
+from rest_framework.views import APIView
 
-class ReviewListAPIView(generics.ListCreateAPIView):
-    queryset = Review.objects.all()
-    serializer_class = ReviewSerializer
-    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
-    def create(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
-        review_instance = serializer.save()
-
-        # Process images if available
-        images_data = request.data.getlist('images')
-        if images_data:
+class ReviewCreateAPIView(APIView):
+    def post(self, request, *args, **kwargs):
+        serializer = ReviewSerializer(data=request.data, context={'request': request})
+        if serializer.is_valid():
+            review_instance = serializer.save()
+            images_data = request.FILES.getlist('images')
             for image_data in images_data:
-                image_serializer = ReviewImageSerializer(data={'review': review_instance.id, 'image': image_data})
-                image_serializer.is_valid(raise_exception=True)
-                image_serializer.save()
-
-        headers = self.get_success_headers(serializer.data)
-        return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
+                try:
+                    Image.objects.create(review=review_instance, image=image_data)
+                except Exception as e:
+                    print(f"Error saving image: {e}")
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

@@ -5,14 +5,15 @@ from django.utils.translation import gettext_lazy as _
 from modeltranslation.admin import TranslationAdmin
 from tinymce.widgets import TinyMCE
 
-from .models import About, ContactInformation, Review, About_Image, Review_Image
+from .models import About, ContactInformation, About_Image, Review, Image
 from .models.blog import Blog, Blog_Image  
-from .models.service import Service,ServiceImage
+from .models.service import Service, ServiceImage
 
 
 class AboutImageInline(admin.TabularInline):
     model = About_Image
     extra = 1
+
 
 @admin.register(About)
 class AboutAdmin(admin.ModelAdmin):
@@ -148,24 +149,48 @@ admin.site.register(ServiceImage)
 # admin.site.register(Service, ServiceAdmin)
 # admin.site.register(ServiceImage)
 
-class ReviewImageInline(admin.TabularInline):
-    model = Review_Image
+# class ReviewImageInline(admin.TabularInline):
+#     model = Review_Image
+#     extra = 1
+#
+# class ReviewAdmin(admin.ModelAdmin):
+#     inlines = [ReviewImageInline]
+#
+#     list_display = ('title', 'service', 'display_images')
+#
+#     formfield_overrides = {
+#         models.TextField: {'widget': TinyMCE()},
+#     }
+#
+#     def display_images(self, obj, size=25):
+#         image_tags = [f'<img src="{image.image.url}" alt="Image {image.id}" width="{100}" height="{100}">' for image in obj.images_review.all()]
+#         return format_html(''.join(image_tags))
+#
+#     display_images.short_description = 'Images'  # Custom column name
+#
+# admin.site.register(Review, ReviewAdmin)
+# admin.site.register(Review_Image)
+
+class ImageInline(admin.TabularInline):
+    model = Image
     extra = 1
 
 class ReviewAdmin(admin.ModelAdmin):
-    inlines = [ReviewImageInline]
-
-    list_display = ('title', 'service', 'display_images')
-
-    formfield_overrides = {
-        models.TextField: {'widget': TinyMCE()},
-    }
-    
-    def display_images(self, obj, size=25):
-        image_tags = [f'<img src="{image.image.url}" alt="Image {image.id}" width="{100}" height="{100}">' for image in obj.images_review.all()]
-        return format_html(''.join(image_tags))
-
-    display_images.short_description = 'Images'  # Custom column name
+    inlines = [ImageInline]
+    list_display = ['title', 'service', 'phone_number', 'mail']
+    search_fields = ['title', 'service__name', 'phone_number', 'mail']
+    list_filter = ['service']
 
 admin.site.register(Review, ReviewAdmin)
-admin.site.register(Review_Image)
+
+class ImageAdmin(admin.ModelAdmin):
+    list_display = ['image_tag']
+    readonly_fields = ['image_tag']
+
+    def image_tag(self, obj):
+        return '<img src="%s" style="max-width:200px;max-height:200px;" />' % obj.image.url
+
+    image_tag.allow_tags = True
+    image_tag.short_description = 'Image Preview'
+
+admin.site.register(Image, ImageAdmin)

@@ -1,2 +1,2 @@
 from .contact import ContactInformationView
-from .reviews import ReviewListAPIView
+from .reviews import ReviewCreateAPIView

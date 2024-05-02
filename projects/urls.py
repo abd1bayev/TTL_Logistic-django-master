@@ -1,5 +1,5 @@
 from django.urls import path
-from projects.views.reviews import ReviewListAPIView 
+from projects.views.reviews import ReviewCreateAPIView
 
 from projects.views.about import AboutListView
 from projects.views.contact import ContactInformationView
@@ -22,5 +22,6 @@ urlpatterns = [
     path('services/', ServiceListAPIView.as_view(), name='service-list'),
     path('services/<slug:slug>/', ServiceRetrieveView.as_view(), name='service-retrieve'),
 
-    path('reviews/', ReviewListAPIView.as_view(), name="reviews"),
+    path('reviews/create/', ReviewCreateAPIView.as_view(), name='review_create'),
+
 ]
