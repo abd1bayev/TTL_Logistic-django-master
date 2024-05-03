@@ -3,9 +3,12 @@ from rest_framework import generics, permissions, status
 from rest_framework.response import Response
 from projects.models import Review, Image
 from projects.serializers import ReviewSerializer
+from django.utils.decorators import method_decorator
+from django.views.decorators.csrf import csrf_exempt
 from rest_framework.views import APIView
 
 
+@method_decorator(csrf_exempt, name='dispatch')
 class ReviewCreateAPIView(APIView):
     def post(self, request, *args, **kwargs):
         serializer = ReviewSerializer(data=request.data, context={'request': request})
