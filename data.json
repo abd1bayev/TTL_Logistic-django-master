@@ -1,0 +1,2392 @@
+[
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2024-04-26T15:27:27.830Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "<p>Trucking-Times &ndash; активный участник транспортно-логистического рынка США, предоставляющий полный комплекс услуг по перевозке грузов любой сложности.</p>",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2024-04-26T15:27:46.358Z",
+            "user": 1,
+            "content_type": 17,
+            "object_id": "1",
+            "object_repr": "About_Image object (1)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2024-04-26T17:10:34.608Z",
+            "user": 1,
+            "content_type": 17,
+            "object_id": "2",
+            "object_repr": "About_Image object (2)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2024-04-26T17:35:50.096Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "2",
+            "object_repr": "<p>Откройте для себя TTL Logistics для бесперебойных FTL/LTL-перевозок из Китая, Индии и Европы в Узбекистан. Воспользуйтесь нашей обширной сетью и опытом в обработке</p>",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2024-04-26T17:36:11.161Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "2",
+            "object_repr": "<p>Откройте для себя TTL Logistics для бесперебойных FTL/LTL-перевозок из Китая, Индии и Европы в Узбекистан. Воспользуйтесь нашей обширной сетью и опытом в обработке</p>",
+            "action_flag": 2,
+            "change_message": "[{\"added\": {\"name\": \"about_ image\", \"object\": \"About_Image object (3)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2024-04-26T17:36:59.881Z",
+            "user": 1,
+            "content_type": 17,
+            "object_id": "4",
+            "object_repr": "About_Image object (4)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2024-04-26T18:33:04.472Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "1",
+            "object_repr": "FTL/LTL перевозки",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2024-04-26T18:33:27.370Z",
+            "user": 1,
+            "content_type": 14,
+            "object_id": "1",
+            "object_repr": "service_images/service-1.png",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2024-04-26T18:43:19.528Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "2",
+            "object_repr": "Мультимодальные перевозки",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2024-04-26T18:44:03.785Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "3",
+            "object_repr": "LCL железная дорога",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2024-04-26T18:45:08.278Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "4",
+            "object_repr": "Ускоренный",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2024-04-27T12:57:22.533Z",
+            "user": 1,
+            "content_type": 14,
+            "object_id": "2",
+            "object_repr": "service_images/service-2.png",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2024-04-27T13:16:27.360Z",
+            "user": 1,
+            "content_type": 14,
+            "object_id": "2",
+            "object_repr": "service_images/service-2.png",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Service\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2024-04-27T13:17:22.186Z",
+            "user": 1,
+            "content_type": 14,
+            "object_id": "2",
+            "object_repr": "service_images/service-2.png",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Service\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 15,
+        "fields": {
+            "action_time": "2024-04-27T13:17:31.696Z",
+            "user": 1,
+            "content_type": 14,
+            "object_id": "3",
+            "object_repr": "service_images/service-3.png",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 16,
+        "fields": {
+            "action_time": "2024-04-27T13:22:39.228Z",
+            "user": 1,
+            "content_type": 14,
+            "object_id": "4",
+            "object_repr": "service_images/service-4.png",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 17,
+        "fields": {
+            "action_time": "2024-04-27T14:49:50.070Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "1",
+            "object_repr": "Производительность здоровье и жизнь",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"blog_ image\", \"object\": \"Blog_Image object (1)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 18,
+        "fields": {
+            "action_time": "2024-04-27T14:51:45.381Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "2",
+            "object_repr": "Производительность здоровье и жизнь",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 19,
+        "fields": {
+            "action_time": "2024-04-27T14:52:24.810Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "3",
+            "object_repr": "Производительность здоровье и жизнь - 3",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 20,
+        "fields": {
+            "action_time": "2024-04-27T14:52:35.145Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "2",
+            "object_repr": "Производительность здоровье и жизнь - 2",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Title [ru]\", \"Title [en]\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 21,
+        "fields": {
+            "action_time": "2024-04-27T14:53:29.347Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "4",
+            "object_repr": "Производительность здоровье и жизнь - 4",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"blog_ image\", \"object\": \"Blog_Image object (2)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 22,
+        "fields": {
+            "action_time": "2024-04-27T14:54:30.635Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "3",
+            "object_repr": "Производительность здоровье и жизнь - 3",
+            "action_flag": 2,
+            "change_message": "[{\"added\": {\"name\": \"blog_ image\", \"object\": \"Blog_Image object (3)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 23,
+        "fields": {
+            "action_time": "2024-04-27T14:55:26.378Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "5",
+            "object_repr": "Производительность здоровье и жизнь - 5",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 24,
+        "fields": {
+            "action_time": "2024-04-27T14:55:42.158Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "5",
+            "object_repr": "Производительность здоровье и жизнь - 5",
+            "action_flag": 2,
+            "change_message": "[{\"added\": {\"name\": \"blog_ image\", \"object\": \"Blog_Image object (4)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 25,
+        "fields": {
+            "action_time": "2024-04-27T15:04:13.849Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "2",
+            "object_repr": "Производительность здоровье и жизнь - 2",
+            "action_flag": 2,
+            "change_message": "[{\"added\": {\"name\": \"blog_ image\", \"object\": \"Blog_Image object (5)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 26,
+        "fields": {
+            "action_time": "2024-04-27T16:11:38.037Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "2",
+            "object_repr": "Производительность здоровье и жизнь - 2",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Description [ru]\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 27,
+        "fields": {
+            "action_time": "2024-04-27T16:33:02.834Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "2",
+            "object_repr": "Производительность здоровье и жизнь - 2",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Description [ru]\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 28,
+        "fields": {
+            "action_time": "2024-04-27T16:33:49.486Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "2",
+            "object_repr": "Производительность здоровье и жизнь - 2",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Description [ru]\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 29,
+        "fields": {
+            "action_time": "2024-04-27T16:37:35.135Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "2",
+            "object_repr": "Производительность здоровье и жизнь - 2",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Description [ru]\", \"Description [en]\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 30,
+        "fields": {
+            "action_time": "2024-04-29T13:34:21.209Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "5",
+            "object_repr": "Performance  health and life - 5",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Title [uz]\", \"Description [uz]\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 31,
+        "fields": {
+            "action_time": "2024-04-29T13:34:44.461Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "2",
+            "object_repr": "<p>Discover TTL Logistics for seamless FTL/LTL transportation from China, India, and Europe to Uzbekistan. Benefit from our comprehensive network and expertise in handling</p>",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u0434\\u0435\\u0440\\u0436\\u0430\\u043d\\u0438\\u0435 [uz]\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 32,
+        "fields": {
+            "action_time": "2024-04-29T13:38:04.398Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "4",
+            "object_repr": "Expedited",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 33,
+        "fields": {
+            "action_time": "2024-04-29T13:38:46.943Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "6",
+            "object_repr": "ahfhafhh",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"blog_ image\", \"object\": \"Blog_Image object (6)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 34,
+        "fields": {
+            "action_time": "2024-04-30T12:22:39.984Z",
+            "user": 1,
+            "content_type": 3,
+            "object_id": "1",
+            "object_repr": "Admin",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 35,
+        "fields": {
+            "action_time": "2024-04-30T12:23:28.049Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "2",
+            "object_repr": "TTLadmin",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 36,
+        "fields": {
+            "action_time": "2024-04-30T12:24:09.895Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "2",
+            "object_repr": "TTLadmin",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Staff status\", \"Groups\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 37,
+        "fields": {
+            "action_time": "2024-04-30T12:31:20.792Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "3",
+            "object_repr": "test",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 38,
+        "fields": {
+            "action_time": "2024-04-30T12:31:37.217Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "3",
+            "object_repr": "test",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Staff status\", \"Superuser status\", \"User permissions\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 39,
+        "fields": {
+            "action_time": "2024-04-30T12:32:29.995Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "3",
+            "object_repr": "test",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 40,
+        "fields": {
+            "action_time": "2024-05-02T02:34:03.935Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "6",
+            "object_repr": "ahfhafhh",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 41,
+        "fields": {
+            "action_time": "2024-05-02T08:10:05.152Z",
+            "user": 1,
+            "content_type": 17,
+            "object_id": "3",
+            "object_repr": "About_Image object (3)",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 42,
+        "fields": {
+            "action_time": "2024-05-02T08:37:41.621Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "7",
+            "object_repr": "dawda",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"blog_ image\", \"object\": \"Blog_Image object (7)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 43,
+        "fields": {
+            "action_time": "2024-05-08T18:54:09.709Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "7",
+            "object_repr": "adadwadad",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"name\": \"blog_ image\", \"object\": \"Blog_Image object (7)\", \"fields\": [\"Imageblog\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 44,
+        "fields": {
+            "action_time": "2024-05-11T12:00:57.151Z",
+            "user": 2,
+            "content_type": 9,
+            "object_id": "2",
+            "object_repr": "<p>Discover TTL Logistics for seamless FTL/LTL transportation from China, India, and Europe to Uzbekistan. Benefit from our comprehensive network and expertise in handling</p>",
+            "action_flag": 2,
+            "change_message": "[{\"added\": {\"name\": \"about_ image\", \"object\": \"About_Image object (5)\"}}, {\"deleted\": {\"name\": \"about_ image\", \"object\": \"About_Image object (None)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 45,
+        "fields": {
+            "action_time": "2024-05-11T12:01:22.989Z",
+            "user": 2,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "<p>Trucking-Times is an active participant in the transport and logistics market of USA, providing a full range of services for the transportation of goods of any complexity.&nbsp;</p>",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 46,
+        "fields": {
+            "action_time": "2024-05-11T12:03:43.428Z",
+            "user": 2,
+            "content_type": 13,
+            "object_id": "4",
+            "object_repr": "Expedited",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u044f\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u044f [ru]\"]}}, {\"added\": {\"name\": \"service image\", \"object\": \"service_images/ab97bdaecaac43e397738de02c19e2eb_1.png\"}}, {\"deleted\": {\"name\": \"service image\", \"object\": \"service_images/service-4.png\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 47,
+        "fields": {
+            "action_time": "2024-05-11T12:33:19.087Z",
+            "user": 2,
+            "content_type": 17,
+            "object_id": "5",
+            "object_repr": "About_Image object (5)",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 48,
+        "fields": {
+            "action_time": "2024-05-11T12:37:27.716Z",
+            "user": 2,
+            "content_type": 9,
+            "object_id": "3",
+            "object_repr": "<p style=\"language: ru; line-height: 90%; margin-top: 10.0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; text-align: left; direction: ltr; unicode-bidi: embed; mso-line-break-override: no",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 49,
+        "fields": {
+            "action_time": "2024-05-11T12:37:55.811Z",
+            "user": 2,
+            "content_type": 9,
+            "object_id": "2",
+            "object_repr": "<p>Discover TTL Logistics for seamless FTL/LTL transportation from China, India, and Europe to Uzbekistan. Benefit from our comprehensive network and expertise in handling</p>",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 50,
+        "fields": {
+            "action_time": "2024-05-11T12:38:47.885Z",
+            "user": 2,
+            "content_type": 17,
+            "object_id": "6",
+            "object_repr": "About_Image object (6)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 51,
+        "fields": {
+            "action_time": "2024-05-11T12:43:32.382Z",
+            "user": 2,
+            "content_type": 9,
+            "object_id": "4",
+            "object_repr": "<p><span style=\"font-family: Calibri; font-size: 16px; text-align: center;\">Specializing in railway, road, and multimodal transport, TTL Logistics serves as your reliable bridge to global trade. Our y",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 52,
+        "fields": {
+            "action_time": "2024-05-11T12:49:28.732Z",
+            "user": 2,
+            "content_type": 17,
+            "object_id": "7",
+            "object_repr": "About_Image object (7)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 53,
+        "fields": {
+            "action_time": "2024-05-11T12:51:09.825Z",
+            "user": 2,
+            "content_type": 13,
+            "object_id": "4",
+            "object_repr": "Expedited",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 54,
+        "fields": {
+            "action_time": "2024-05-11T13:44:39.176Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "7",
+            "object_repr": "adadwadad",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 55,
+        "fields": {
+            "action_time": "2024-05-12T04:36:32.666Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "3",
+            "object_repr": "<p style=\"language: ru; line-height: 90%; margin-top: 10.0pt; margin-bottom: 0pt; margin-left: 0in; text-indent: 0in; text-align: left; direction: ltr; unicode-bidi: embed; mso-line-break-override: no",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u0434\\u0435\\u0440\\u0436\\u0430\\u043d\\u0438\\u0435 [ru]\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 56,
+        "fields": {
+            "action_time": "2024-05-12T05:05:26.113Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "5",
+            "object_repr": "<p>Специализируясь на железнодорожных, автомобильных и мультимодальных перевозках, TTL Logistics служит вашим надежным мостом в мировую торговлю. Наша энергия молодости в сочетании с многолетним опыто",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 57,
+        "fields": {
+            "action_time": "2024-05-12T05:06:36.393Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "4",
+            "object_repr": "<p>Специализируясь на железнодорожных, автомобильных и мультимодальных перевозках, TTL Logistics служит вашим надежным мостом в мировую торговлю. Наша энергия молодости в сочетании с многолетним опыто",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 58,
+        "fields": {
+            "action_time": "2024-05-12T05:08:13.082Z",
+            "user": 1,
+            "content_type": 17,
+            "object_id": "8",
+            "object_repr": "About_Image object (8)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 59,
+        "fields": {
+            "action_time": "2024-05-12T05:08:54.283Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "3",
+            "object_repr": "<p style=\"text-align: center;\">Добро пожаловать в TTL Logistics, динамичную и развивающуюся компанию в мире логистики со штаб-квартирой в Ташкенте, Узбекистан. Наша компания, основанная командой динам",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 60,
+        "fields": {
+            "action_time": "2024-05-12T05:09:34.335Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "3",
+            "object_repr": "<p style=\"text-align: center;\">Добро пожаловать в TTL Logistics, динамичную и развивающуюся компанию в мире логистики со штаб-квартирой в Ташкенте, Узбекистан. Наша компания, основанная командой динам",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u043e\\u0434\\u0435\\u0440\\u0436\\u0430\\u043d\\u0438\\u0435 [en]\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 61,
+        "fields": {
+            "action_time": "2024-05-14T11:59:17.625Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "1",
+            "object_repr": "FTL/LTL transportation",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 4,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 4,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 4,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 4,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 5,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 5,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 5,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 5,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 6,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 6,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 6,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 6,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add blacklisted token",
+            "content_type": 7,
+            "codename": "add_blacklistedtoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change blacklisted token",
+            "content_type": 7,
+            "codename": "change_blacklistedtoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete blacklisted token",
+            "content_type": 7,
+            "codename": "delete_blacklistedtoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view blacklisted token",
+            "content_type": 7,
+            "codename": "view_blacklistedtoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add outstanding token",
+            "content_type": 8,
+            "codename": "add_outstandingtoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change outstanding token",
+            "content_type": 8,
+            "codename": "change_outstandingtoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete outstanding token",
+            "content_type": 8,
+            "codename": "delete_outstandingtoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view outstanding token",
+            "content_type": 8,
+            "codename": "view_outstandingtoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 33,
+        "fields": {
+            "name": "Can add О нас",
+            "content_type": 9,
+            "codename": "add_about"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 34,
+        "fields": {
+            "name": "Can change О нас",
+            "content_type": 9,
+            "codename": "change_about"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 35,
+        "fields": {
+            "name": "Can delete О нас",
+            "content_type": 9,
+            "codename": "delete_about"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 36,
+        "fields": {
+            "name": "Can view О нас",
+            "content_type": 9,
+            "codename": "view_about"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 37,
+        "fields": {
+            "name": "Can add Blog",
+            "content_type": 10,
+            "codename": "add_blog"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 38,
+        "fields": {
+            "name": "Can change Blog",
+            "content_type": 10,
+            "codename": "change_blog"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 39,
+        "fields": {
+            "name": "Can delete Blog",
+            "content_type": 10,
+            "codename": "delete_blog"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 40,
+        "fields": {
+            "name": "Can view Blog",
+            "content_type": 10,
+            "codename": "view_blog"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 41,
+        "fields": {
+            "name": "Can add contact information",
+            "content_type": 11,
+            "codename": "add_contactinformation"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 42,
+        "fields": {
+            "name": "Can change contact information",
+            "content_type": 11,
+            "codename": "change_contactinformation"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 43,
+        "fields": {
+            "name": "Can delete contact information",
+            "content_type": 11,
+            "codename": "delete_contactinformation"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 44,
+        "fields": {
+            "name": "Can view contact information",
+            "content_type": 11,
+            "codename": "view_contactinformation"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 45,
+        "fields": {
+            "name": "Can add Отзыв",
+            "content_type": 12,
+            "codename": "add_review"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 46,
+        "fields": {
+            "name": "Can change Отзыв",
+            "content_type": 12,
+            "codename": "change_review"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 47,
+        "fields": {
+            "name": "Can delete Отзыв",
+            "content_type": 12,
+            "codename": "delete_review"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 48,
+        "fields": {
+            "name": "Can view Отзыв",
+            "content_type": 12,
+            "codename": "view_review"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 49,
+        "fields": {
+            "name": "Can add Услуга",
+            "content_type": 13,
+            "codename": "add_service"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 50,
+        "fields": {
+            "name": "Can change Услуга",
+            "content_type": 13,
+            "codename": "change_service"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 51,
+        "fields": {
+            "name": "Can delete Услуга",
+            "content_type": 13,
+            "codename": "delete_service"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 52,
+        "fields": {
+            "name": "Can view Услуга",
+            "content_type": 13,
+            "codename": "view_service"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 53,
+        "fields": {
+            "name": "Can add service image",
+            "content_type": 14,
+            "codename": "add_serviceimage"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 54,
+        "fields": {
+            "name": "Can change service image",
+            "content_type": 14,
+            "codename": "change_serviceimage"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 55,
+        "fields": {
+            "name": "Can delete service image",
+            "content_type": 14,
+            "codename": "delete_serviceimage"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 56,
+        "fields": {
+            "name": "Can view service image",
+            "content_type": 14,
+            "codename": "view_serviceimage"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 57,
+        "fields": {
+            "name": "Can add review_ image",
+            "content_type": 15,
+            "codename": "add_review_image"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 58,
+        "fields": {
+            "name": "Can change review_ image",
+            "content_type": 15,
+            "codename": "change_review_image"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 59,
+        "fields": {
+            "name": "Can delete review_ image",
+            "content_type": 15,
+            "codename": "delete_review_image"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 60,
+        "fields": {
+            "name": "Can view review_ image",
+            "content_type": 15,
+            "codename": "view_review_image"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 61,
+        "fields": {
+            "name": "Can add blog_ image",
+            "content_type": 16,
+            "codename": "add_blog_image"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 62,
+        "fields": {
+            "name": "Can change blog_ image",
+            "content_type": 16,
+            "codename": "change_blog_image"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 63,
+        "fields": {
+            "name": "Can delete blog_ image",
+            "content_type": 16,
+            "codename": "delete_blog_image"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 64,
+        "fields": {
+            "name": "Can view blog_ image",
+            "content_type": 16,
+            "codename": "view_blog_image"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 65,
+        "fields": {
+            "name": "Can add about_ image",
+            "content_type": 17,
+            "codename": "add_about_image"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 66,
+        "fields": {
+            "name": "Can change about_ image",
+            "content_type": 17,
+            "codename": "change_about_image"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 67,
+        "fields": {
+            "name": "Can delete about_ image",
+            "content_type": 17,
+            "codename": "delete_about_image"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 68,
+        "fields": {
+            "name": "Can view about_ image",
+            "content_type": 17,
+            "codename": "view_about_image"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 69,
+        "fields": {
+            "name": "Can add Изображение",
+            "content_type": 18,
+            "codename": "add_image"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 70,
+        "fields": {
+            "name": "Can change Изображение",
+            "content_type": 18,
+            "codename": "change_image"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 71,
+        "fields": {
+            "name": "Can delete Изображение",
+            "content_type": 18,
+            "codename": "delete_image"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 72,
+        "fields": {
+            "name": "Can view Изображение",
+            "content_type": 18,
+            "codename": "view_image"
+        }
+    },
+    {
+        "model": "auth.group",
+        "pk": 1,
+        "fields": {
+            "name": "Admin",
+            "permissions": [
+                33,
+                34,
+                35,
+                36,
+                65,
+                66,
+                67,
+                68,
+                37,
+                38,
+                39,
+                40,
+                61,
+                62,
+                63,
+                64,
+                41,
+                42,
+                43,
+                44,
+                45,
+                46,
+                47,
+                48,
+                57,
+                58,
+                59,
+                60,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                55,
+                56
+            ]
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$mGSWXSFYuzjoIBXn0wW31u$veuCRaguAVBiAdbKFUmg0KFjWq8KXz0QtNIpA2jNiqo=",
+            "last_login": "2024-05-12T04:55:41.443Z",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "email": "admin@gmail.com",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-04-26T15:12:08.531Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$f9FlGrxSCEuJNiCyxFwMxd$vWApASGeKW4MQcVzNYmY+WNOifVLdwAmE7eGd7wlQ/E=",
+            "last_login": "2024-05-11T11:58:10.110Z",
+            "is_superuser": false,
+            "username": "TTLadmin",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2024-04-30T12:23:27Z",
+            "groups": [
+                1
+            ],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "auth",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "token_blacklist",
+            "model": "blacklistedtoken"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 8,
+        "fields": {
+            "app_label": "token_blacklist",
+            "model": "outstandingtoken"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 9,
+        "fields": {
+            "app_label": "projects",
+            "model": "about"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 10,
+        "fields": {
+            "app_label": "projects",
+            "model": "blog"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 11,
+        "fields": {
+            "app_label": "projects",
+            "model": "contactinformation"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 12,
+        "fields": {
+            "app_label": "projects",
+            "model": "review"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 13,
+        "fields": {
+            "app_label": "projects",
+            "model": "service"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 14,
+        "fields": {
+            "app_label": "projects",
+            "model": "serviceimage"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 15,
+        "fields": {
+            "app_label": "projects",
+            "model": "review_image"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 16,
+        "fields": {
+            "app_label": "projects",
+            "model": "blog_image"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 17,
+        "fields": {
+            "app_label": "projects",
+            "model": "about_image"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 18,
+        "fields": {
+            "app_label": "projects",
+            "model": "image"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "1thsc74yt34jq9srty4pzuf6905kvcp9",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAQRf-FtSGVNy7d9xvIwAxSNZCUdmX8dyXpQrf3nHNfLMC-lbB3WsOC7MIEO_1uEdKD6gB4h3prPLW6rUvkQ-EH7XxuSM_r4f4dFOjlW5MAb8gqjSpLUJKiJ2eEJyli9hMq4YydtFMUBWTv8IzOumz9cLJO7P0B43Q31w:1s1mbm:kNWmHvu0L088ior4xNdLJz0f38egILiG_LMX19Wf6tk",
+            "expire_date": "2024-05-14T12:29:18.878Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "agbm2w0yb9tz0ri22xllso7o35f4k1zl",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQBe_iGlnxNw4lfc5g7XrXOIAcKU4qxN1JpBTQzsx7bxFhW0vcGi9xInEVSlx-GUJ6cj0EPaDeZ5nmui4TyiORp21ynIlft7P9OyjQyr7WJnQZQJFzoAbKSpHRxmQKij0mN-y8Sz4zWwgGA-YeLCOBhuSt68XnC_JHOLI:1s0NTS:BeFg8m5zaWeAPjLrEvD5tVxXZJvCdQ7eg5qTkkGjW0A",
+            "expire_date": "2024-05-10T15:26:54.962Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "cew8mec55xy3k0pyroqf1x9g9cnd49ot",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQBe_iGln-xpiSPmew1rsbHEC2FCcV4u4QKQW0b2beSyTY1pK2zkuaSVyEFaffLQM-uO6A7lBvTWKr6zJnuSvyoF2Ojfh5Pdy_gwK9fGtHyqNCpTlGb86Tgei0icgBhkBOYyBU4HHwFhgiGMVuQmuzJ00uOvH-AN15N_U:1s1med:xATtAKSC5kgeae18gXfwiN2GtFbTNamcGGmxFLwdL9Q",
+            "expire_date": "2024-05-14T12:32:15.060Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "gkw1qgtibgrx1ftn0zw6sphx8oi56i45",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQBe_iGlnxNw4lfc5g7XrXOIAcKU4qxN1JpBTQzsx7bxFhW0vcGi9xInEVSlx-GUJ6cj0EPaDeZ5nmui4TyiORp21ynIlft7P9OyjQyr7WJnQZQJFzoAbKSpHRxmQKij0mN-y8Sz4zWwgGA-YeLCOBhuSt68XnC_JHOLI:1s0NOu:6nP5DcCeP1C7vlLpbmN36BK7pXozKFRsPapesJaUrn8",
+            "expire_date": "2024-05-10T15:22:12.539Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "h5nyvsyvficl0ad0xckbj1r51l9334gb",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAQRf-FtSGVNy7d9xvIwAxSNZCUdmX8dyXpQrf3nHNfLMC-lbB3WsOC7MIEO_1uEdKD6gB4h3prPLW6rUvkQ-EH7XxuSM_r4f4dFOjlW5MAb8gqjSpLUJKiJ2eEJyli9hMq4YydtFMUBWTv8IzOumz9cLJO7P0B43Q31w:1s5lGR:dHUxsP2YKn1z2zA_4JzxqIak8nTlSwGzNEu3fqkeujA",
+            "expire_date": "2024-05-25T11:51:43.855Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "llumgzmsswgr3lsmpida7x2f9ig0eclq",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQBe_iGlnxNw4lfc5g7XrXOIAcKU4qxN1JpBTQzsx7bxFhW0vcGi9xInEVSlx-GUJ6cj0EPaDeZ5nmui4TyiORp21ynIlft7P9OyjQyr7WJnQZQJFzoAbKSpHRxmQKij0mN-y8Sz4zWwgGA-YeLCOBhuSt68XnC_JHOLI:1s4mGB:zJzPKTpr_qxL98y7eUwXxMBgMD5_c6gE4ZDiHvNfC80",
+            "expire_date": "2024-05-22T18:43:23.947Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "of4ho6dfe9v86bo60bxpc8lpo77kn3jb",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAQRf-FtSGVNy7d9xvIwAxSNZCUdmX8dyXpQrf3nHNfLMC-lbB3WsOC7MIEO_1uEdKD6gB4h3prPLW6rUvkQ-EH7XxuSM_r4f4dFOjlW5MAb8gqjSpLUJKiJ2eEJyli9hMq4YydtFMUBWTv8IzOumz9cLJO7P0B43Q31w:1s5lMg:aA1EUKVQ7ilYG-iE-Civa9Vi9VWe7gUKkzKYInMtcO8",
+            "expire_date": "2024-05-25T11:58:10.111Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "t2fnauyiidsfnu92qdpebl43mgquxd1g",
+        "fields": {
+            "session_data": ".eJxVjMsOwiAQRf-FtSGVNy7d9xvIwAxSNZCUdmX8dyXpQrf3nHNfLMC-lbB3WsOC7MIEO_1uEdKD6gB4h3prPLW6rUvkQ-EH7XxuSM_r4f4dFOjlW5MAb8gqjSpLUJKiJ2eEJyli9hMq4YydtFMUBWTv8IzOumz9cLJO7P0B43Q31w:1s1mX1:ZkpGZcoW2ez_yvzj19W8ijA5kJBMN9zNKLvXi0_bp3I",
+            "expire_date": "2024-05-14T12:24:23.011Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "ueq2l212tsgpqjlmn642trg7unfxx8o7",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQBe_iGlnxNw4lfc5g7XrXOIAcKU4qxN1JpBTQzsx7bxFhW0vcGi9xInEVSlx-GUJ6cj0EPaDeZ5nmui4TyiORp21ynIlft7P9OyjQyr7WJnQZQJFzoAbKSpHRxmQKij0mN-y8Sz4zWwgGA-YeLCOBhuSt68XnC_JHOLI:1s61FN:67kNI-PgIGVyZN5v7bvhN9RXYcMAUgqxCD4getcvPn0",
+            "expire_date": "2024-05-26T04:55:41.445Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "y4hd7thc7i052mip3vugwy3lgjwsxpxh",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQBe_iGlnxNw4lfc5g7XrXOIAcKU4qxN1JpBTQzsx7bxFhW0vcGi9xInEVSlx-GUJ6cj0EPaDeZ5nmui4TyiORp21ynIlft7P9OyjQyr7WJnQZQJFzoAbKSpHRxmQKij0mN-y8Sz4zWwgGA-YeLCOBhuSt68XnC_JHOLI:1s0P5A:83ugYNMp4m4AJg58RB3EvmEqpTYfRUV13UXgilQM6bs",
+            "expire_date": "2024-05-10T17:09:56.832Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "zjgzhyclge6b17qugc54a6hydwmij4ll",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQBe_iGlnxNw4lfc5g7XrXOIAcKU4qxN1JpBTQzsx7bxFhW0vcGi9xInEVSlx-GUJ6cj0EPaDeZ5nmui4TyiORp21ynIlft7P9OyjQyr7WJnQZQJFzoAbKSpHRxmQKij0mN-y8Sz4zWwgGA-YeLCOBhuSt68XnC_JHOLI:1s60ur:pbe78yJUXn7xyRpKF-YvK6hhesPLhqQVCmrPDJxDwvU",
+            "expire_date": "2024-05-26T04:34:29.124Z"
+        }
+    },
+    {
+        "model": "projects.about",
+        "pk": 3,
+        "fields": {
+            "content": "<p style=\"text-align: center;\">Добро пожаловать в TTL Logistics, динамичную и развивающуюся компанию в мире логистики со штаб-квартирой в Ташкенте, Узбекистан. Наша компания, основанная командой динамичных и опытных профессионалов, предлагает новый взгляд на международные грузовые перевозки.</p>",
+            "content_ru": "<p style=\"text-align: center;\">Добро пожаловать в TTL Logistics, динамичную и развивающуюся компанию в мире логистики со штаб-квартирой в Ташкенте, Узбекистан. Наша компания, основанная командой динамичных и опытных профессионалов, предлагает новый взгляд на международные грузовые перевозки.</p>",
+            "content_en": "<p>Welcome to TTL Logistics, a vibrant and emerging force in the world of logistics, headquartered in Tashkent, Uzbekistan. Founded by a team of dynamic and experienced professionals, our company brings a fresh perspective to international freight forwarding.</p>",
+            "content_uz": "<p>Logistika olamining jonli va rivojlanayotgan kuchi bo&lsquo;lgan TTL Logistics kompaniyasiga xush kelibsiz. Dinamik va tajribali mutaxassislar jamoasi tomonidan tashkil etilgan kompaniyamiz xalqaro yuk tashishga yangi istiqbollarni olib keladi.</p>"
+        }
+    },
+    {
+        "model": "projects.about",
+        "pk": 5,
+        "fields": {
+            "content": "<p>Специализируясь на железнодорожных, автомобильных и мультимодальных перевозках, TTL Logistics служит вашим надежным мостом в мировую торговлю. Наша энергия молодости в сочетании с многолетним опытом в сфере логистики гарантирует, что мы предоставляем инновационные и эффективные решения, адаптированные к уникальным потребностям каждого клиента.</p>",
+            "content_ru": "<p>Специализируясь на железнодорожных, автомобильных и мультимодальных перевозках, TTL Logistics служит вашим надежным мостом в мировую торговлю. Наша энергия молодости в сочетании с многолетним опытом в сфере логистики гарантирует, что мы предоставляем инновационные и эффективные решения, адаптированные к уникальным потребностям каждого клиента.</p>",
+            "content_en": "<p>Specializing in railway, road, and multimodal transport, TTL Logistics serves as your reliable bridge to global trade. Our youthful energy, combined with years of logistics expertise, ensures that we provide innovative and efficient solutions tailored to each client's unique needs.</p>",
+            "content_uz": "<p>Logistika olamining jonli va rivojlanayotgan kuchi bo&lsquo;lgan TTL Logistics kompaniyasiga xush kelibsiz. Dinamik va tajribali mutaxassislar jamoasi tomonidan tashkil etilgan kompaniyamiz xalqaro yuk tashishga yangi istiqbollarni olib keladi.</p>"
+        }
+    },
+    {
+        "model": "projects.about_image",
+        "pk": 6,
+        "fields": {
+            "about": 3,
+            "image": "about_images/image_1.jpg"
+        }
+    },
+    {
+        "model": "projects.about_image",
+        "pk": 8,
+        "fields": {
+            "about": 5,
+            "image": "about_images/bg-2.webp"
+        }
+    },
+    {
+        "model": "projects.blog",
+        "pk": 1,
+        "fields": {
+            "guid": "af7c0e2b-2f76-4879-a36a-00f9588b4939",
+            "created_time": "2024-04-27T14:49:50.066Z",
+            "updated_time": "2024-04-27T14:49:50.066Z",
+            "title": "Производительность здоровье и жизнь",
+            "title_ru": "Производительность здоровье и жизнь",
+            "title_en": "Performance  health and life",
+            "title_uz": null,
+            "description": "<p>Услуга Team Expedit обязательно выручит вас в тех случаях, когда вы не можете терять ни минуты. Опытная и внимательная команда осуществит ускоренную доставку. Благодаря большому количеству тщательно проверенных и проверенных логистических схем, мы перевозим вверенный нам товар в оптимальные сроки.</p>\r\n<p>Услуга Team Expedited включает в себя</p>\r\n<p>1. Выбор автомобиля исходя из характеристик груза.</p>\r\n<p>2. Разработка оптимального маршрута движения.</p>\r\n<p>3. Контроль за сохранностью Груза, соблюдением условий хранения и транспортировки.</p>\r\n<p>4. Контроль состояния груза, соблюдение сроков доставки и формирование отчета для клиента</p>\r\n<p>Воспользовавшись услугой &laquo;Ускоренная услуга &laquo;Транспорт Таймс&raquo;, вы получите ряд существенных преимуществ.</p>\r\n<p>Воспользовавшись услугой &laquo;Ускоренная услуга &laquo;Транспорт Таймс&raquo;, вы получите ряд существенных преимуществ;</p>\r\n<p>Услуга предполагает подготовку, которая защищает клиента от негативных последствий различных форс-мажорных обстоятельств;</p>\r\n<p>Наша Команда предварительно оценивает сроки доставки и разрабатывает оптимальный маршрут движения товара. Важность этого фактора невозможно переоценить, особенно для скоропортящихся товаров, где любая задержка грозит потерей целой партии товара;</p>\r\n<p>На основании характеристик Грузов выбирается наиболее подходящее транспортное средство, строится оптимальный маршрут, благодаря чему достигается значительная экономия транспортных расходов;</p>\r\n<p>Таким образом, Ускоренная услуга играет весьма значимую роль в процессе перевозки и служит гарантом сохранности товара на всех этапах его транспортировки.</p>",
+            "description_ru": "<p>Услуга Team Expedit обязательно выручит вас в тех случаях, когда вы не можете терять ни минуты. Опытная и внимательная команда осуществит ускоренную доставку. Благодаря большому количеству тщательно проверенных и проверенных логистических схем, мы перевозим вверенный нам товар в оптимальные сроки.</p>\r\n<p>Услуга Team Expedited включает в себя</p>\r\n<p>1. Выбор автомобиля исходя из характеристик груза.</p>\r\n<p>2. Разработка оптимального маршрута движения.</p>\r\n<p>3. Контроль за сохранностью Груза, соблюдением условий хранения и транспортировки.</p>\r\n<p>4. Контроль состояния груза, соблюдение сроков доставки и формирование отчета для клиента</p>\r\n<p>Воспользовавшись услугой &laquo;Ускоренная услуга &laquo;Транспорт Таймс&raquo;, вы получите ряд существенных преимуществ.</p>\r\n<p>Воспользовавшись услугой &laquo;Ускоренная услуга &laquo;Транспорт Таймс&raquo;, вы получите ряд существенных преимуществ;</p>\r\n<p>Услуга предполагает подготовку, которая защищает клиента от негативных последствий различных форс-мажорных обстоятельств;</p>\r\n<p>Наша Команда предварительно оценивает сроки доставки и разрабатывает оптимальный маршрут движения товара. Важность этого фактора невозможно переоценить, особенно для скоропортящихся товаров, где любая задержка грозит потерей целой партии товара;</p>\r\n<p>На основании характеристик Грузов выбирается наиболее подходящее транспортное средство, строится оптимальный маршрут, благодаря чему достигается значительная экономия транспортных расходов;</p>\r\n<p>Таким образом, Ускоренная услуга играет весьма значимую роль в процессе перевозки и служит гарантом сохранности товара на всех этапах его транспортировки.</p>",
+            "description_en": "<p><span style=\"white-space-collapse: preserve;\">Team Expedited service will certainly help you out in cases where you cannot lose a minute. Experienced and attentive Team will perform expedited delivery. Due to the large number of carefully tested and proven logistics schemes, we transport the goods entrusted to us in the optimal time.<br />Team Expedited service includes<br />1. Selection of a vehicle based on the characteristics of the Load<br />2. Development of an optimal driving route<br />3. Control over the safety of Load, compliance with storage and transportation conditions<br />4. Monitoring the condition of the load, meeting delivery deadlines and generating a report for the client<br />Using the Expedited Service of Trucking Times, you will receive a number of significant advantages<br />Using the Expedited Service of Trucking Times, you will receive a number of significant advantages;<br />The service involves the preparation, which protects the client from the negative consequences of various force majeure circumstances;<br />Our Team tentatively estimate delivery times and develop an optimal route for the movement of goods. The importance of this factor can&rsquo;t be overestimated especially for perishable goods, where any delay threatens the loss of a whole batch of goods;<br />Based on the characteristics of the Loads, the most suitable vehicle is selected, the optimal route is built, and thus significant savings in transportation costs are achieved;<br />Thus, the Expedited service plays a very significant role in the transportation process and serves as a guarantor of the safety of goods at all stages of distribution.</span></p>",
+            "description_uz": "",
+            "country": null,
+            "country_ru": null,
+            "country_en": null,
+            "country_uz": null,
+            "address": null,
+            "address_ru": null,
+            "address_en": null,
+            "address_uz": null,
+            "contact_information": null,
+            "contact_information_ru": null,
+            "contact_information_en": null,
+            "contact_information_uz": null,
+            "slug": "proizvoditelnost-zdorove-i-zhizn",
+            "view_count": 0
+        }
+    },
+    {
+        "model": "projects.blog",
+        "pk": 2,
+        "fields": {
+            "guid": "059ce501-6450-4fe1-b3b2-24524af3a091",
+            "created_time": "2024-04-27T14:51:45.380Z",
+            "updated_time": "2024-04-27T16:37:35.133Z",
+            "title": "Производительность здоровье и жизнь - 2",
+            "title_ru": "Производительность здоровье и жизнь - 2",
+            "title_en": "Performance  health and life - 2",
+            "title_uz": null,
+            "description": "<p><span style=\"font-size: 14pt;\">Услуга Team Expedit обязательно выручит вас в тех случаях, когда вы не можете терять ни минуты. Опытная и внимательная команда осуществит ускоренную доставку. Благодаря большому количеству тщательно проверенных и проверенных логистических схем, мы перевозим вверенный нам товар в оптимальные сроки.</span></p>\r\n<h4><span style=\"font-size: 14pt;\"><strong>Услуга Team Expedited включает в себя</strong></span></h4>\r\n<p><span style=\"font-size: 14pt;\">1. Выбор автомобиля исходя из характеристик груза.</span></p>\r\n<p><span style=\"font-size: 14pt;\">2. Разработка оптимального маршрута движения.</span></p>\r\n<p><span style=\"font-size: 14pt;\">3. Контроль за сохранностью Груза, соблюдением условий хранения и транспортировки.</span></p>\r\n<p><span style=\"font-size: 14pt;\">4. Контроль состояния груза, соблюдение сроков доставки и формирование отчета для клиента</span></p>\r\n<p><strong><span style=\"font-size: 14pt;\">Воспользовавшись услугой &laquo;Ускоренная услуга &laquo;Транспорт Таймс&raquo;, вы получите ряд существенных преимуществ.</span></strong></p>\r\n<p><span style=\"font-size: 14pt;\">Воспользовавшись услугой &laquo;Ускоренная услуга &laquo;Транспорт Таймс&raquo;, вы получите ряд существенных преимуществ;</span></p>\r\n<p><span style=\"font-size: 14pt;\">Услуга предполагает подготовку, которая защищает клиента от негативных последствий различных форс-мажорных обстоятельств;</span></p>\r\n<p><span style=\"font-size: 14pt;\">Наша Команда предварительно оценивает сроки доставки и разрабатывает оптимальный маршрут движения товара. Важность этого фактора невозможно переоценить, особенно для скоропортящихся товаров, где любая задержка грозит потерей целой партии товара;</span></p>\r\n<p><span style=\"font-size: 14pt;\">На основании характеристик Грузов выбирается наиболее подходящее транспортное средство, строится оптимальный маршрут, благодаря чему достигается значительная экономия транспортных расходов;</span></p>\r\n<p><span style=\"font-size: 14pt;\">Таким образом, Ускоренная услуга играет весьма значимую роль в процессе перевозки и служит гарантом сохранности товара на всех этапах его транспортировки.</span></p>",
+            "description_ru": "<p><span style=\"font-size: 14pt;\">Услуга Team Expedit обязательно выручит вас в тех случаях, когда вы не можете терять ни минуты. Опытная и внимательная команда осуществит ускоренную доставку. Благодаря большому количеству тщательно проверенных и проверенных логистических схем, мы перевозим вверенный нам товар в оптимальные сроки.</span></p>\r\n<h4><span style=\"font-size: 14pt;\"><strong>Услуга Team Expedited включает в себя</strong></span></h4>\r\n<p><span style=\"font-size: 14pt;\">1. Выбор автомобиля исходя из характеристик груза.</span></p>\r\n<p><span style=\"font-size: 14pt;\">2. Разработка оптимального маршрута движения.</span></p>\r\n<p><span style=\"font-size: 14pt;\">3. Контроль за сохранностью Груза, соблюдением условий хранения и транспортировки.</span></p>\r\n<p><span style=\"font-size: 14pt;\">4. Контроль состояния груза, соблюдение сроков доставки и формирование отчета для клиента</span></p>\r\n<p><strong><span style=\"font-size: 14pt;\">Воспользовавшись услугой &laquo;Ускоренная услуга &laquo;Транспорт Таймс&raquo;, вы получите ряд существенных преимуществ.</span></strong></p>\r\n<p><span style=\"font-size: 14pt;\">Воспользовавшись услугой &laquo;Ускоренная услуга &laquo;Транспорт Таймс&raquo;, вы получите ряд существенных преимуществ;</span></p>\r\n<p><span style=\"font-size: 14pt;\">Услуга предполагает подготовку, которая защищает клиента от негативных последствий различных форс-мажорных обстоятельств;</span></p>\r\n<p><span style=\"font-size: 14pt;\">Наша Команда предварительно оценивает сроки доставки и разрабатывает оптимальный маршрут движения товара. Важность этого фактора невозможно переоценить, особенно для скоропортящихся товаров, где любая задержка грозит потерей целой партии товара;</span></p>\r\n<p><span style=\"font-size: 14pt;\">На основании характеристик Грузов выбирается наиболее подходящее транспортное средство, строится оптимальный маршрут, благодаря чему достигается значительная экономия транспортных расходов;</span></p>\r\n<p><span style=\"font-size: 14pt;\">Таким образом, Ускоренная услуга играет весьма значимую роль в процессе перевозки и служит гарантом сохранности товара на всех этапах его транспортировки.</span></p>",
+            "description_en": "<p><span style=\"font-size: 14pt;\">Team Expedited service will certainly help you out in cases where you cannot lose a minute. Experienced and attentive Team will perform expedited delivery. Due to the large number of carefully tested and proven logistics schemes, we transport the goods entrusted to us in the optimal time.</span></p>\r\n<p><strong><span style=\"font-size: 14pt;\">Team Expedited service includes</span></strong></p>\r\n<p><span style=\"font-size: 14pt;\">1. Selection of a vehicle based on the characteristics of the Load</span></p>\r\n<p><span style=\"font-size: 14pt;\">2. Development of an optimal driving route</span></p>\r\n<p><span style=\"font-size: 14pt;\">3. Control over the safety of Load, compliance with storage and transportation conditions</span></p>\r\n<p><span style=\"font-size: 14pt;\">4. Monitoring the condition of the load, meeting delivery deadlines and generating a report for the client</span></p>\r\n<p><strong><span style=\"font-size: 14pt;\">Using the Expedited Service of Trucking Times, you will receive a number of significant advantages</span></strong></p>\r\n<p><span style=\"font-size: 14pt;\">Using the Expedited Service of Trucking Times, you will receive a number of significant advantages;</span></p>\r\n<p><span style=\"font-size: 14pt;\">The service involves the preparation, which protects the client from the negative consequences of various force majeure circumstances;</span></p>\r\n<p><span style=\"font-size: 14pt;\">Our Team tentatively estimate delivery times and develop an optimal route for the movement of goods. The importance of this factor can&rsquo;t be overestimated especially for perishable goods, where any delay threatens the loss of a whole batch of goods;</span></p>\r\n<p><span style=\"font-size: 14pt;\">Based on the characteristics of the Loads, the most suitable vehicle is selected, the optimal route is built, and thus significant savings in transportation costs are achieved;</span></p>\r\n<p><span style=\"font-size: 14pt;\">Thus, the Expedited service plays a very significant role in the transportation process and serves as a guarantor of the safety of goods at all stages of distribution.</span></p>",
+            "description_uz": "",
+            "country": null,
+            "country_ru": null,
+            "country_en": null,
+            "country_uz": null,
+            "address": null,
+            "address_ru": null,
+            "address_en": null,
+            "address_uz": null,
+            "contact_information": null,
+            "contact_information_ru": null,
+            "contact_information_en": null,
+            "contact_information_uz": null,
+            "slug": "proizvoditelnost-zdorove-i-zhizn-2",
+            "view_count": 0
+        }
+    },
+    {
+        "model": "projects.blog",
+        "pk": 3,
+        "fields": {
+            "guid": "b3070e72-7195-4101-ac4c-96656a0d9e7a",
+            "created_time": "2024-04-27T14:52:24.808Z",
+            "updated_time": "2024-04-27T14:54:30.631Z",
+            "title": "Производительность здоровье и жизнь - 3",
+            "title_ru": "Производительность здоровье и жизнь - 3",
+            "title_en": "Performance  health and life - 3",
+            "title_uz": null,
+            "description": "<p>Услуга Team Expedit обязательно выручит вас в тех случаях, когда вы не можете терять ни минуты. Опытная и внимательная команда осуществит ускоренную доставку. Благодаря большому количеству тщательно проверенных и проверенных логистических схем, мы перевозим вверенный нам товар в оптимальные сроки.</p>\r\n<p>Услуга Team Expedited включает в себя</p>\r\n<p>1. Выбор автомобиля исходя из характеристик груза.</p>\r\n<p>2. Разработка оптимального маршрута движения.</p>\r\n<p>3. Контроль за сохранностью Груза, соблюдением условий хранения и транспортировки.</p>\r\n<p>4. Контроль состояния груза, соблюдение сроков доставки и формирование отчета для клиента</p>\r\n<p>Воспользовавшись услугой &laquo;Ускоренная услуга &laquo;Транспорт Таймс&raquo;, вы получите ряд существенных преимуществ.</p>\r\n<p>Воспользовавшись услугой &laquo;Ускоренная услуга &laquo;Транспорт Таймс&raquo;, вы получите ряд существенных преимуществ;</p>\r\n<p>Услуга предполагает подготовку, которая защищает клиента от негативных последствий различных форс-мажорных обстоятельств;</p>\r\n<p>Наша Команда предварительно оценивает сроки доставки и разрабатывает оптимальный маршрут движения товара. Важность этого фактора невозможно переоценить, особенно для скоропортящихся товаров, где любая задержка грозит потерей целой партии товара;</p>\r\n<p>На основании характеристик Грузов выбирается наиболее подходящее транспортное средство, строится оптимальный маршрут, благодаря чему достигается значительная экономия транспортных расходов;</p>\r\n<p>Таким образом, Ускоренная услуга играет весьма значимую роль в процессе перевозки и служит гарантом сохранности товара на всех этапах его транспортировки.</p>",
+            "description_ru": "<p>Услуга Team Expedit обязательно выручит вас в тех случаях, когда вы не можете терять ни минуты. Опытная и внимательная команда осуществит ускоренную доставку. Благодаря большому количеству тщательно проверенных и проверенных логистических схем, мы перевозим вверенный нам товар в оптимальные сроки.</p>\r\n<p>Услуга Team Expedited включает в себя</p>\r\n<p>1. Выбор автомобиля исходя из характеристик груза.</p>\r\n<p>2. Разработка оптимального маршрута движения.</p>\r\n<p>3. Контроль за сохранностью Груза, соблюдением условий хранения и транспортировки.</p>\r\n<p>4. Контроль состояния груза, соблюдение сроков доставки и формирование отчета для клиента</p>\r\n<p>Воспользовавшись услугой &laquo;Ускоренная услуга &laquo;Транспорт Таймс&raquo;, вы получите ряд существенных преимуществ.</p>\r\n<p>Воспользовавшись услугой &laquo;Ускоренная услуга &laquo;Транспорт Таймс&raquo;, вы получите ряд существенных преимуществ;</p>\r\n<p>Услуга предполагает подготовку, которая защищает клиента от негативных последствий различных форс-мажорных обстоятельств;</p>\r\n<p>Наша Команда предварительно оценивает сроки доставки и разрабатывает оптимальный маршрут движения товара. Важность этого фактора невозможно переоценить, особенно для скоропортящихся товаров, где любая задержка грозит потерей целой партии товара;</p>\r\n<p>На основании характеристик Грузов выбирается наиболее подходящее транспортное средство, строится оптимальный маршрут, благодаря чему достигается значительная экономия транспортных расходов;</p>\r\n<p>Таким образом, Ускоренная услуга играет весьма значимую роль в процессе перевозки и служит гарантом сохранности товара на всех этапах его транспортировки.</p>",
+            "description_en": "<p>Team Expedited service will certainly help you out in cases where you cannot lose a minute. Experienced and attentive Team will perform expedited delivery. Due to the large number of carefully tested and proven logistics schemes, we transport the goods entrusted to us in the optimal time.</p>\r\n<p>Team Expedited service includes</p>\r\n<p>1. Selection of a vehicle based on the characteristics of the Load</p>\r\n<p>2. Development of an optimal driving route</p>\r\n<p>3. Control over the safety of Load, compliance with storage and transportation conditions</p>\r\n<p>4. Monitoring the condition of the load, meeting delivery deadlines and generating a report for the client</p>\r\n<p>Using the Expedited Service of Trucking Times, you will receive a number of significant advantages</p>\r\n<p>Using the Expedited Service of Trucking Times, you will receive a number of significant advantages;</p>\r\n<p>The service involves the preparation, which protects the client from the negative consequences of various force majeure circumstances;</p>\r\n<p>Our Team tentatively estimate delivery times and develop an optimal route for the movement of goods. The importance of this factor can&rsquo;t be overestimated especially for perishable goods, where any delay threatens the loss of a whole batch of goods;</p>\r\n<p>Based on the characteristics of the Loads, the most suitable vehicle is selected, the optimal route is built, and thus significant savings in transportation costs are achieved;</p>\r\n<p>Thus, the Expedited service plays a very significant role in the transportation process and serves as a guarantor of the safety of goods at all stages of distribution.</p>",
+            "description_uz": "",
+            "country": null,
+            "country_ru": null,
+            "country_en": null,
+            "country_uz": null,
+            "address": null,
+            "address_ru": null,
+            "address_en": null,
+            "address_uz": null,
+            "contact_information": null,
+            "contact_information_ru": null,
+            "contact_information_en": null,
+            "contact_information_uz": null,
+            "slug": "proizvoditelnost-zdorove-i-zhizn-3",
+            "view_count": 0
+        }
+    },
+    {
+        "model": "projects.blog",
+        "pk": 4,
+        "fields": {
+            "guid": "65911368-aa06-4c9e-9cfb-b41eea67cd56",
+            "created_time": "2024-04-27T14:53:29.078Z",
+            "updated_time": "2024-04-27T14:53:29.078Z",
+            "title": "Производительность здоровье и жизнь - 4",
+            "title_ru": "Производительность здоровье и жизнь - 4",
+            "title_en": "Performance  health and life - 4",
+            "title_uz": null,
+            "description": "<p>Услуга Team Expedit обязательно выручит вас в тех случаях, когда вы не можете терять ни минуты. Опытная и внимательная команда осуществит ускоренную доставку. Благодаря большому количеству тщательно проверенных и проверенных логистических схем, мы перевозим вверенный нам товар в оптимальные сроки.</p>\r\n<p>Услуга Team Expedited включает в себя</p>\r\n<p>1. Выбор автомобиля исходя из характеристик груза.</p>\r\n<p>2. Разработка оптимального маршрута движения.</p>\r\n<p>3. Контроль за сохранностью Груза, соблюдением условий хранения и транспортировки.</p>\r\n<p>4. Контроль состояния груза, соблюдение сроков доставки и формирование отчета для клиента</p>\r\n<p>Воспользовавшись услугой &laquo;Ускоренная услуга &laquo;Транспорт Таймс&raquo;, вы получите ряд существенных преимуществ.</p>\r\n<p>Воспользовавшись услугой &laquo;Ускоренная услуга &laquo;Транспорт Таймс&raquo;, вы получите ряд существенных преимуществ;</p>\r\n<p>Услуга предполагает подготовку, которая защищает клиента от негативных последствий различных форс-мажорных обстоятельств;</p>\r\n<p>Наша Команда предварительно оценивает сроки доставки и разрабатывает оптимальный маршрут движения товара. Важность этого фактора невозможно переоценить, особенно для скоропортящихся товаров, где любая задержка грозит потерей целой партии товара;</p>\r\n<p>На основании характеристик Грузов выбирается наиболее подходящее транспортное средство, строится оптимальный маршрут, благодаря чему достигается значительная экономия транспортных расходов;</p>\r\n<p>Таким образом, Ускоренная услуга играет весьма значимую роль в процессе перевозки и служит гарантом сохранности товара на всех этапах его транспортировки.</p>",
+            "description_ru": "<p>Услуга Team Expedit обязательно выручит вас в тех случаях, когда вы не можете терять ни минуты. Опытная и внимательная команда осуществит ускоренную доставку. Благодаря большому количеству тщательно проверенных и проверенных логистических схем, мы перевозим вверенный нам товар в оптимальные сроки.</p>\r\n<p>Услуга Team Expedited включает в себя</p>\r\n<p>1. Выбор автомобиля исходя из характеристик груза.</p>\r\n<p>2. Разработка оптимального маршрута движения.</p>\r\n<p>3. Контроль за сохранностью Груза, соблюдением условий хранения и транспортировки.</p>\r\n<p>4. Контроль состояния груза, соблюдение сроков доставки и формирование отчета для клиента</p>\r\n<p>Воспользовавшись услугой &laquo;Ускоренная услуга &laquo;Транспорт Таймс&raquo;, вы получите ряд существенных преимуществ.</p>\r\n<p>Воспользовавшись услугой &laquo;Ускоренная услуга &laquo;Транспорт Таймс&raquo;, вы получите ряд существенных преимуществ;</p>\r\n<p>Услуга предполагает подготовку, которая защищает клиента от негативных последствий различных форс-мажорных обстоятельств;</p>\r\n<p>Наша Команда предварительно оценивает сроки доставки и разрабатывает оптимальный маршрут движения товара. Важность этого фактора невозможно переоценить, особенно для скоропортящихся товаров, где любая задержка грозит потерей целой партии товара;</p>\r\n<p>На основании характеристик Грузов выбирается наиболее подходящее транспортное средство, строится оптимальный маршрут, благодаря чему достигается значительная экономия транспортных расходов;</p>\r\n<p>Таким образом, Ускоренная услуга играет весьма значимую роль в процессе перевозки и служит гарантом сохранности товара на всех этапах его транспортировки.</p>",
+            "description_en": "<p>Team Expedited service will certainly help you out in cases where you cannot lose a minute. Experienced and attentive Team will perform expedited delivery. Due to the large number of carefully tested and proven logistics schemes, we transport the goods entrusted to us in the optimal time.</p>\r\n<p>Team Expedited service includes</p>\r\n<p>1. Selection of a vehicle based on the characteristics of the Load</p>\r\n<p>2. Development of an optimal driving route</p>\r\n<p>3. Control over the safety of Load, compliance with storage and transportation conditions</p>\r\n<p>4. Monitoring the condition of the load, meeting delivery deadlines and generating a report for the client</p>\r\n<p>Using the Expedited Service of Trucking Times, you will receive a number of significant advantages</p>\r\n<p>Using the Expedited Service of Trucking Times, you will receive a number of significant advantages;</p>\r\n<p>The service involves the preparation, which protects the client from the negative consequences of various force majeure circumstances;</p>\r\n<p>Our Team tentatively estimate delivery times and develop an optimal route for the movement of goods. The importance of this factor can&rsquo;t be overestimated especially for perishable goods, where any delay threatens the loss of a whole batch of goods;</p>\r\n<p>Based on the characteristics of the Loads, the most suitable vehicle is selected, the optimal route is built, and thus significant savings in transportation costs are achieved;</p>\r\n<p>Thus, the Expedited service plays a very significant role in the transportation process and serves as a guarantor of the safety of goods at all stages of distribution.</p>",
+            "description_uz": "",
+            "country": null,
+            "country_ru": null,
+            "country_en": null,
+            "country_uz": null,
+            "address": null,
+            "address_ru": null,
+            "address_en": null,
+            "address_uz": null,
+            "contact_information": null,
+            "contact_information_ru": null,
+            "contact_information_en": null,
+            "contact_information_uz": null,
+            "slug": "proizvoditelnost-zdorove-i-zhizn-4",
+            "view_count": 0
+        }
+    },
+    {
+        "model": "projects.blog",
+        "pk": 5,
+        "fields": {
+            "guid": "228c344e-feac-4d1e-a211-bc1690760bc9",
+            "created_time": "2024-04-27T14:55:26.377Z",
+            "updated_time": "2024-04-29T13:34:21.207Z",
+            "title": "Производительность здоровье и жизнь - 5",
+            "title_ru": "Производительность здоровье и жизнь - 5",
+            "title_en": "Performance  health and life - 5",
+            "title_uz": "Performance  health and life - 5 UZ",
+            "description": "<p>Услуга Team Expedit обязательно выручит вас в тех случаях, когда вы не можете терять ни минуты. Опытная и внимательная команда осуществит ускоренную доставку. Благодаря большому количеству тщательно проверенных и проверенных логистических схем, мы перевозим вверенный нам товар в оптимальные сроки.</p>\r\n<p>Услуга Team Expedited включает в себя</p>\r\n<p>1. Выбор автомобиля исходя из характеристик груза.</p>\r\n<p>2. Разработка оптимального маршрута движения.</p>\r\n<p>3. Контроль за сохранностью Груза, соблюдением условий хранения и транспортировки.</p>\r\n<p>4. Контроль состояния груза, соблюдение сроков доставки и формирование отчета для клиента</p>\r\n<p>Воспользовавшись услугой &laquo;Ускоренная услуга &laquo;Транспорт Таймс&raquo;, вы получите ряд существенных преимуществ.</p>\r\n<p>Воспользовавшись услугой &laquo;Ускоренная услуга &laquo;Транспорт Таймс&raquo;, вы получите ряд существенных преимуществ;</p>\r\n<p>Услуга предполагает подготовку, которая защищает клиента от негативных последствий различных форс-мажорных обстоятельств;</p>\r\n<p>Наша Команда предварительно оценивает сроки доставки и разрабатывает оптимальный маршрут движения товара. Важность этого фактора невозможно переоценить, особенно для скоропортящихся товаров, где любая задержка грозит потерей целой партии товара;</p>\r\n<p>На основании характеристик Грузов выбирается наиболее подходящее транспортное средство, строится оптимальный маршрут, благодаря чему достигается значительная экономия транспортных расходов;</p>\r\n<p>Таким образом, Ускоренная услуга играет весьма значимую роль в процессе перевозки и служит гарантом сохранности товара на всех этапах его транспортировки.</p>",
+            "description_ru": "<p>Услуга Team Expedit обязательно выручит вас в тех случаях, когда вы не можете терять ни минуты. Опытная и внимательная команда осуществит ускоренную доставку. Благодаря большому количеству тщательно проверенных и проверенных логистических схем, мы перевозим вверенный нам товар в оптимальные сроки.</p>\r\n<p>Услуга Team Expedited включает в себя</p>\r\n<p>1. Выбор автомобиля исходя из характеристик груза.</p>\r\n<p>2. Разработка оптимального маршрута движения.</p>\r\n<p>3. Контроль за сохранностью Груза, соблюдением условий хранения и транспортировки.</p>\r\n<p>4. Контроль состояния груза, соблюдение сроков доставки и формирование отчета для клиента</p>\r\n<p>Воспользовавшись услугой &laquo;Ускоренная услуга &laquo;Транспорт Таймс&raquo;, вы получите ряд существенных преимуществ.</p>\r\n<p>Воспользовавшись услугой &laquo;Ускоренная услуга &laquo;Транспорт Таймс&raquo;, вы получите ряд существенных преимуществ;</p>\r\n<p>Услуга предполагает подготовку, которая защищает клиента от негативных последствий различных форс-мажорных обстоятельств;</p>\r\n<p>Наша Команда предварительно оценивает сроки доставки и разрабатывает оптимальный маршрут движения товара. Важность этого фактора невозможно переоценить, особенно для скоропортящихся товаров, где любая задержка грозит потерей целой партии товара;</p>\r\n<p>На основании характеристик Грузов выбирается наиболее подходящее транспортное средство, строится оптимальный маршрут, благодаря чему достигается значительная экономия транспортных расходов;</p>\r\n<p>Таким образом, Ускоренная услуга играет весьма значимую роль в процессе перевозки и служит гарантом сохранности товара на всех этапах его транспортировки.</p>",
+            "description_en": "<p>Team Expedited service will certainly help you out in cases where you cannot lose a minute. Experienced and attentive Team will perform expedited delivery. Due to the large number of carefully tested and proven logistics schemes, we transport the goods entrusted to us in the optimal time.</p>\r\n<p>Team Expedited service includes</p>\r\n<p>1. Selection of a vehicle based on the characteristics of the Load</p>\r\n<p>2. Development of an optimal driving route</p>\r\n<p>3. Control over the safety of Load, compliance with storage and transportation conditions</p>\r\n<p>4. Monitoring the condition of the load, meeting delivery deadlines and generating a report for the client</p>\r\n<p>Using the Expedited Service of Trucking Times, you will receive a number of significant advantages</p>\r\n<p>Using the Expedited Service of Trucking Times, you will receive a number of significant advantages;</p>\r\n<p>The service involves the preparation, which protects the client from the negative consequences of various force majeure circumstances;</p>\r\n<p>Our Team tentatively estimate delivery times and develop an optimal route for the movement of goods. The importance of this factor can&rsquo;t be overestimated especially for perishable goods, where any delay threatens the loss of a whole batch of goods;</p>\r\n<p>Based on the characteristics of the Loads, the most suitable vehicle is selected, the optimal route is built, and thus significant savings in transportation costs are achieved;</p>\r\n<p>Thus, the Expedited service plays a very significant role in the transportation process and serves as a guarantor of the safety of goods at all stages of distribution.</p>",
+            "description_uz": "<p>Team Expedited service will certainly help you out in cases where you cannot lose a minute. Experienced and attentive Team will perform expedited delivery. Due to the large number of carefully tested and proven logistics schemes, we transport the goods entrusted to us in the optimal time.</p>\r\n<p>Team Expedited service includes</p>\r\n<p>1. Selection of a vehicle based on the characteristics of the Load</p>\r\n<p>2. Development of an optimal driving route</p>\r\n<p>3. Control over the safety of Load, compliance with storage and transportation conditions</p>\r\n<p>4. Monitoring the condition of the load, meeting delivery deadlines and generating a report for the client</p>\r\n<p>Using the Expedited Service of Trucking Times, you will receive a number of significant advantages</p>\r\n<p>Using the Expedited Service of Trucking Times, you will receive a number of significant advantages;</p>\r\n<p>The service involves the preparation, which protects the client from the negative consequences of various force majeure circumstances;</p>\r\n<p>UZ Our Team tentatively estimate delivery times and develop an optimal route for the movement of goods. The importance of this factor can&rsquo;t be overestimated especially for perishable goods, where any delay threatens the loss of a whole batch of goods;</p>\r\n<p>Based on the characteristics of the Loads, the most suitable vehicle is selected, the optimal route is built, and thus significant savings in transportation costs are achieved;</p>\r\n<p>Thus, the Expedited service plays a very significant role in the transportation process and serves as a guarantor of the safety of goods at all stages of distribution.</p>",
+            "country": null,
+            "country_ru": null,
+            "country_en": null,
+            "country_uz": null,
+            "address": null,
+            "address_ru": null,
+            "address_en": null,
+            "address_uz": null,
+            "contact_information": null,
+            "contact_information_ru": null,
+            "contact_information_en": null,
+            "contact_information_uz": null,
+            "slug": "proizvoditelnost-zdorove-i-zhizn-5",
+            "view_count": 0
+        }
+    },
+    {
+        "model": "projects.blog_image",
+        "pk": 1,
+        "fields": {
+            "blog": 1,
+            "image": "blog_images/blog-1.png"
+        }
+    },
+    {
+        "model": "projects.blog_image",
+        "pk": 2,
+        "fields": {
+            "blog": 4,
+            "image": "blog_images/blog-4.png"
+        }
+    },
+    {
+        "model": "projects.blog_image",
+        "pk": 3,
+        "fields": {
+            "blog": 3,
+            "image": "blog_images/blog-3.png"
+        }
+    },
+    {
+        "model": "projects.blog_image",
+        "pk": 4,
+        "fields": {
+            "blog": 5,
+            "image": "blog_images/service-4.png"
+        }
+    },
+    {
+        "model": "projects.blog_image",
+        "pk": 5,
+        "fields": {
+            "blog": 2,
+            "image": "blog_images/blog-2.png"
+        }
+    },
+    {
+        "model": "projects.service",
+        "pk": 2,
+        "fields": {
+            "guid": "4ddaa0ce-00fa-45ab-8e23-16d31c33515a",
+            "created_time": "2024-04-26T18:43:19.527Z",
+            "updated_time": "2024-04-26T18:43:19.527Z",
+            "title": "Мультимодальные перевозки",
+            "title_ru": "Мультимодальные перевозки",
+            "title_en": "Multi-modal transport",
+            "title_uz": null,
+            "slug": "multimodalnye-perevozki",
+            "descriptions": "<p>Откройте для себя TTL Logistics для бесперебойных FTL/LTL-перевозок из Китая, Индии и Европы в Узбекистан. Воспользуйтесь нашей обширной сетью и опытом в обработке как полных, так и неполных грузовых перевозок (LTL). Мы оптимизируем маршруты и обеспечиваем своевременную доставку, учитывая ваши конкретные потребности. Независимо от того, требуется ли вам полная вместимость грузовика или небольшие поставки, доверьте TTL Logistics экономически эффективные и надежные транспортные решения. Свяжитесь с нами сегодня, чтобы оптимизировать вашу логистику и расширить свое присутствие в Узбекистане.</p>",
+            "descriptions_ru": "<p>Откройте для себя TTL Logistics для бесперебойных FTL/LTL-перевозок из Китая, Индии и Европы в Узбекистан. Воспользуйтесь нашей обширной сетью и опытом в обработке как полных, так и неполных грузовых перевозок (LTL). Мы оптимизируем маршруты и обеспечиваем своевременную доставку, учитывая ваши конкретные потребности. Независимо от того, требуется ли вам полная вместимость грузовика или небольшие поставки, доверьте TTL Logistics экономически эффективные и надежные транспортные решения. Свяжитесь с нами сегодня, чтобы оптимизировать вашу логистику и расширить свое присутствие в Узбекистане.</p>",
+            "descriptions_en": "<p><span style=\"white-space-collapse: preserve;\">Discover TTL Logistics for seamless FTL/LTL transportation from China, India, and Europe to Uzbekistan. Benefit from our comprehensive network and expertise in handling both full truckload (FTL) and less than truckload (LTL) shipments. We optimize routes and ensure timely delivery, catering to your specific needs. Whether you require full truck capacity or smaller shipments, trust TTL Logistics for cost-effective and reliable transportation solutions. Contact us today to streamline your logistics and expand your reach into Uzbekistan.</span></p>",
+            "descriptions_uz": ""
+        }
+    },
+    {
+        "model": "projects.service",
+        "pk": 3,
+        "fields": {
+            "guid": "411eba75-9a99-40fa-9562-2e3fc3f83f5c",
+            "created_time": "2024-04-26T18:44:03.784Z",
+            "updated_time": "2024-04-26T18:44:03.784Z",
+            "title": "LCL железная дорога",
+            "title_ru": "LCL железная дорога",
+            "title_en": "LCL railway",
+            "title_uz": null,
+            "slug": "lcl-zheleznaya-doroga",
+            "descriptions": "<p>Откройте для себя TTL Logistics для бесперебойных FTL/LTL-перевозок из Китая, Индии и Европы в Узбекистан. Воспользуйтесь нашей обширной сетью и опытом в обработке как полных, так и неполных грузовых перевозок (LTL). Мы оптимизируем маршруты и обеспечиваем своевременную доставку, учитывая ваши конкретные потребности. Независимо от того, требуется ли вам полная вместимость грузовика или небольшие поставки, доверьте TTL Logistics экономически эффективные и надежные транспортные решения. Свяжитесь с нами сегодня, чтобы оптимизировать вашу логистику и расширить свое присутствие в Узбекистане.</p>",
+            "descriptions_ru": "<p>Откройте для себя TTL Logistics для бесперебойных FTL/LTL-перевозок из Китая, Индии и Европы в Узбекистан. Воспользуйтесь нашей обширной сетью и опытом в обработке как полных, так и неполных грузовых перевозок (LTL). Мы оптимизируем маршруты и обеспечиваем своевременную доставку, учитывая ваши конкретные потребности. Независимо от того, требуется ли вам полная вместимость грузовика или небольшие поставки, доверьте TTL Logistics экономически эффективные и надежные транспортные решения. Свяжитесь с нами сегодня, чтобы оптимизировать вашу логистику и расширить свое присутствие в Узбекистане.</p>",
+            "descriptions_en": "<p><span style=\"white-space-collapse: preserve;\">Discover TTL Logistics for seamless FTL/LTL transportation from China, India, and Europe to Uzbekistan. Benefit from our comprehensive network and expertise in handling both full truckload (FTL) and less than truckload (LTL) shipments. We optimize routes and ensure timely delivery, catering to your specific needs. Whether you require full truck capacity or smaller shipments, trust TTL Logistics for cost-effective and reliable transportation solutions. Contact us today to streamline your logistics and expand your reach into Uzbekistan.</span></p>",
+            "descriptions_uz": ""
+        }
+    },
+    {
+        "model": "projects.service",
+        "pk": 4,
+        "fields": {
+            "guid": "2f8efbfb-2d3a-4161-a58e-771a60c9f317",
+            "created_time": "2024-04-26T18:45:08.278Z",
+            "updated_time": "2024-05-11T12:51:09.824Z",
+            "title": "Ускоренный",
+            "title_ru": "Ускоренный",
+            "title_en": "Expedited",
+            "title_uz": null,
+            "slug": "uskorennyj",
+            "descriptions": "<h1><span style=\"white-space-collapse: preserve;\">Discov<strong>er </strong></span></h1>\r\n<p><span style=\"white-space-collapse: preserve;\"><strong>TTL Logistics for seamless FTL/LTL transportation from China, India, and Europe to Uzbekistan. Benefit from our comprehensive network and expertise in handling both full truckload (FTL) and less than truckload (LTL) shipments. We optimize routes and ensure timely delivery, catering to your</strong> s<strong>pecific needs. W</strong>hether you require full truck capacity or smalle<em>r shipments, trust TTL Logistics for cost-effective and reliable transportation solutions. Contact us today to streamline your logistics and expand your reach into Uzbe</em>kistan.</span></p>",
+            "descriptions_ru": "<h1><span style=\"white-space-collapse: preserve;\">Discov<strong>er </strong></span></h1>\r\n<p><span style=\"white-space-collapse: preserve;\"><strong>TTL Logistics for seamless FTL/LTL transportation from China, India, and Europe to Uzbekistan. Benefit from our comprehensive network and expertise in handling both full truckload (FTL) and less than truckload (LTL) shipments. We optimize routes and ensure timely delivery, catering to your</strong> s<strong>pecific needs. W</strong>hether you require full truck capacity or smalle<em>r shipments, trust TTL Logistics for cost-effective and reliable transportation solutions. Contact us today to streamline your logistics and expand your reach into Uzbe</em>kistan.</span></p>",
+            "descriptions_en": "<p><span style=\"white-space-collapse: preserve;\">Discover TTL Logistics for seamless FTL/LTL transportation from China, India, and Europe to Uzbekistan. Benefit from our comprehensive network and expertise in handling both full truckload (FTL) and less than truckload (LTL) shipments. We optimize routes and ensure timely delivery, catering to your specific needs. Whether you require full truck capacity or smaller shipments, trust TTL Logistics for cost-effective and reliable transportation solutions. Contact us today to streamline your logistics and expand your reach into Uzbekistan.</span></p>",
+            "descriptions_uz": ""
+        }
+    },
+    {
+        "model": "projects.serviceimage",
+        "pk": 2,
+        "fields": {
+            "image": "service_images/service-2.png",
+            "service": 2
+        }
+    },
+    {
+        "model": "projects.serviceimage",
+        "pk": 3,
+        "fields": {
+            "image": "service_images/service-3.png",
+            "service": 3
+        }
+    },
+    {
+        "model": "projects.serviceimage",
+        "pk": 5,
+        "fields": {
+            "image": "service_images/ab97bdaecaac43e397738de02c19e2eb_1.png",
+            "service": 4
+        }
+    },
+    {
+        "model": "projects.review",
+        "pk": 1,
+        "fields": {
+            "service": 4,
+            "phone_number": "undefined",
+            "title": "undefined",
+            "index_code": "undefined",
+            "name": null,
+            "name_ru": null,
+            "name_en": "undefined",
+            "name_uz": null,
+            "surname": "undefined",
+            "address": "undefined",
+            "note": "undefined",
+            "description": null,
+            "description_ru": null,
+            "description_en": "undefined",
+            "description_uz": null,
+            "mail": "alirahmonnuraliev@gmail.com",
+            "images": []
+        }
+    },
+    {
+        "model": "projects.review",
+        "pk": 2,
+        "fields": {
+            "service": 3,
+            "phone_number": "undefined",
+            "title": "undefined",
+            "index_code": "undefined",
+            "name": null,
+            "name_ru": null,
+            "name_en": "undefined",
+            "name_uz": null,
+            "surname": "undefined",
+            "address": "undefined",
+            "note": "undefined",
+            "description": null,
+            "description_ru": null,
+            "description_en": "undefined",
+            "description_uz": null,
+            "mail": "alirahmonnuraliev@gmail.com",
+            "images": []
+        }
+    },
+    {
+        "model": "projects.review",
+        "pk": 3,
+        "fields": {
+            "service": 3,
+            "phone_number": "undefined",
+            "title": "undefined",
+            "index_code": "undefined",
+            "name": null,
+            "name_ru": null,
+            "name_en": "undefined",
+            "name_uz": null,
+            "surname": "undefined",
+            "address": "undefined",
+            "note": "undefined",
+            "description": null,
+            "description_ru": null,
+            "description_en": "undefined",
+            "description_uz": null,
+            "mail": "alirahmonnuraliev@gmail.com",
+            "images": []
+        }
+    },
+    {
+        "model": "projects.review",
+        "pk": 4,
+        "fields": {
+            "service": 3,
+            "phone_number": "undefined",
+            "title": "undefined",
+            "index_code": "undefined",
+            "name": null,
+            "name_ru": null,
+            "name_en": null,
+            "name_uz": "undefined",
+            "surname": "undefined",
+            "address": "undefined",
+            "note": "undefined",
+            "description": null,
+            "description_ru": null,
+            "description_en": null,
+            "description_uz": "undefined",
+            "mail": "ajsjhshshdh@gmail.com",
+            "images": []
+        }
+    },
+    {
+        "model": "projects.review",
+        "pk": 5,
+        "fields": {
+            "service": 3,
+            "phone_number": "undefined",
+            "title": "undefined",
+            "index_code": "undefined",
+            "name": "undefined",
+            "name_ru": "undefined",
+            "name_en": null,
+            "name_uz": null,
+            "surname": "undefined",
+            "address": "undefined",
+            "note": "undefined",
+            "description": "undefined",
+            "description_ru": "undefined",
+            "description_en": null,
+            "description_uz": null,
+            "mail": "dawdad@gmail.ru",
+            "images": []
+        }
+    },
+    {
+        "model": "projects.review",
+        "pk": 6,
+        "fields": {
+            "service": 3,
+            "phone_number": "undefined",
+            "title": "undefined",
+            "index_code": "undefined",
+            "name": "undefined",
+            "name_ru": "undefined",
+            "name_en": null,
+            "name_uz": null,
+            "surname": "undefined",
+            "address": "undefined",
+            "note": "undefined",
+            "description": "undefined",
+            "description_ru": "undefined",
+            "description_en": null,
+            "description_uz": null,
+            "mail": "alirahmonnuraliev@gmail.com",
+            "images": []
+        }
+    },
+    {
+        "model": "projects.review",
+        "pk": 7,
+        "fields": {
+            "service": 2,
+            "phone_number": null,
+            "title": null,
+            "index_code": null,
+            "name": null,
+            "name_ru": null,
+            "name_en": null,
+            "name_uz": null,
+            "surname": null,
+            "address": null,
+            "note": null,
+            "description": null,
+            "description_ru": null,
+            "description_en": null,
+            "description_uz": null,
+            "mail": "dawdad@ru.ru",
+            "images": []
+        }
+    },
+    {
+        "model": "projects.review",
+        "pk": 8,
+        "fields": {
+            "service": null,
+            "phone_number": null,
+            "title": null,
+            "index_code": null,
+            "name": null,
+            "name_ru": null,
+            "name_en": null,
+            "name_uz": null,
+            "surname": null,
+            "address": null,
+            "note": null,
+            "description": null,
+            "description_ru": null,
+            "description_en": null,
+            "description_uz": null,
+            "mail": null,
+            "images": []
+        }
+    },
+    {
+        "model": "projects.review",
+        "pk": 9,
+        "fields": {
+            "service": null,
+            "phone_number": null,
+            "title": null,
+            "index_code": null,
+            "name": null,
+            "name_ru": null,
+            "name_en": null,
+            "name_uz": null,
+            "surname": null,
+            "address": null,
+            "note": null,
+            "description": null,
+            "description_ru": null,
+            "description_en": null,
+            "description_uz": null,
+            "mail": null,
+            "images": []
+        }
+    },
+    {
+        "model": "projects.review",
+        "pk": 10,
+        "fields": {
+            "service": null,
+            "phone_number": null,
+            "title": null,
+            "index_code": null,
+            "name": "",
+            "name_ru": "",
+            "name_en": null,
+            "name_uz": null,
+            "surname": null,
+            "address": null,
+            "note": null,
+            "description": null,
+            "description_ru": null,
+            "description_en": null,
+            "description_uz": null,
+            "mail": "",
+            "images": []
+        }
+    },
+    {
+        "model": "projects.review",
+        "pk": 13,
+        "fields": {
+            "service": null,
+            "phone_number": null,
+            "title": null,
+            "index_code": null,
+            "name": null,
+            "name_ru": null,
+            "name_en": null,
+            "name_uz": null,
+            "surname": null,
+            "address": null,
+            "note": null,
+            "description": null,
+            "description_ru": null,
+            "description_en": null,
+            "description_uz": null,
+            "mail": null,
+            "images": []
+        }
+    },
+    {
+        "model": "projects.image",
+        "pk": 1,
+        "fields": {
+            "review": 1,
+            "image": "review_images/bg-2.webp"
+        }
+    },
+    {
+        "model": "projects.image",
+        "pk": 2,
+        "fields": {
+            "review": 1,
+            "image": "review_images/bg-1.webp"
+        }
+    },
+    {
+        "model": "projects.image",
+        "pk": 3,
+        "fields": {
+            "review": 1,
+            "image": "review_images/bg-2_7OlpRqb.webp"
+        }
+    },
+    {
+        "model": "projects.image",
+        "pk": 4,
+        "fields": {
+            "review": 2,
+            "image": "review_images/bg-1_EWxvTmD.webp"
+        }
+    },
+    {
+        "model": "projects.image",
+        "pk": 5,
+        "fields": {
+            "review": 2,
+            "image": "review_images/bg-1_Hcq5ypz.webp"
+        }
+    },
+    {
+        "model": "projects.image",
+        "pk": 6,
+        "fields": {
+            "review": 3,
+            "image": "review_images/bg-1_hM70j6t.webp"
+        }
+    },
+    {
+        "model": "projects.image",
+        "pk": 7,
+        "fields": {
+            "review": 3,
+            "image": "review_images/bg-1_WJnwTJw.webp"
+        }
+    },
+    {
+        "model": "projects.image",
+        "pk": 12,
+        "fields": {
+            "review": 13,
+            "image": "review_images/korxona_shaxsiy_kabinetiga_malumotlarni_chiqarish_is36zGO.jpg"
+        }
+    },
+    {
+        "model": "projects.image",
+        "pk": 13,
+        "fields": {
+            "review": 13,
+            "image": "review_images/korxona_shaxsiy_kabinetiga_malumotlarni_chiqarish_QVwaFBR.jpg"
+        }
+    }
+]
