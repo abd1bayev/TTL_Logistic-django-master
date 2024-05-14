@@ -36,8 +36,8 @@ class Service(BaseModel):
         super(Service, self).save(*args, **kwargs)
 
     class Meta:
-        verbose_name = _("Услуга")
-        verbose_name_plural = _("Услуги")
+        verbose_name = _("Service")
+        verbose_name_plural = _("Service")
         
         
 class ServiceImage(models.Model):

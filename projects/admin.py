@@ -16,17 +16,20 @@ class AboutImageInline(admin.TabularInline):
 
 
 @admin.register(About)
-class AboutAdmin(admin.ModelAdmin):
-    list_display = ('content',)
+class AboutAdmin(TranslationAdmin):
+    list_display = ('content_as_html',)
     search_fields = ('content',)
-  # Custom column name
     formfield_overrides = {
-    models.TextField: {'widget': TinyMCE()},  # Use TinyMCE for text fields
-}
-
+        models.TextField: {'widget': TinyMCE()},  # Matn maydonchalari uchun TinyMCE ni qo'llash
+    }
     inlines = [AboutImageInline]
 
-admin.site.register(About_Image)  # Register the AboutImage model as well
+    def content_as_html(self, obj):
+        return format_html(obj.content)
+
+    content_as_html.short_description = 'Content'
+
+# admin.site.register(About_Image)  # Register the AboutImage model as well
 
 
 
@@ -37,14 +40,24 @@ class ImageInline(admin.TabularInline):
     model = Blog_Image
     extra = 1  # Number of empty forms to display
 
-class BlogAdmin(admin.ModelAdmin):
-    list_display = ('title', 'formatted_date_created')  # Customize the displayed fields
+class BlogAdmin(TranslationAdmin):
+    list_display = ('title','address_as_html','description_as_html', 'formatted_date_created',)  # Customize the displayed fields
 
     def formatted_date_created(self, obj):
         return obj.created_time.strftime('%Y-%m-%d %H:%M:%S')  # Assuming created_time is the field name
     formatted_date_created.short_description = _('Date Created')  # Custom column name
 
-    search_fields = ('title', 'description', 'country', 'address')  # Add fields to search
+    def description_as_html(self, obj):
+        return format_html(obj.description)
+
+    description_as_html.short_description = 'Description'
+    
+    def address_as_html(self, obj):
+        return format_html(obj.address)
+
+    address_as_html.short_description = 'Address'
+    
+    search_fields = ('title', 'description', 'country', 'address',)  # Add fields to search
     prepopulated_fields = {"slug": ("title",)}  # Automatically populate the slug from the title
 
     formfield_overrides = {
@@ -99,7 +112,7 @@ class ServiceImageInline(admin.TabularInline):
     model = ServiceImage
     extra = 1
 
-class ServiceAdmin(admin.ModelAdmin):
+class ServiceAdmin(TranslationAdmin):
     # Specify which fields to display in the admin list view
     inlines = [ServiceImageInline]
 
@@ -135,7 +148,7 @@ class ServiceAdmin(admin.ModelAdmin):
 # Register the Service model with the custom admin class
 admin.site.register(Service, ServiceAdmin)
 
-admin.site.register(ServiceImage)
+# admin.site.register(ServiceImage)
 
 
 # class ServiceImageInline(admin.TabularInline):
@@ -175,7 +188,7 @@ class ImageInline(admin.TabularInline):
     model = Image
     extra = 1
 
-class ReviewAdmin(admin.ModelAdmin):
+class ReviewAdmin(TranslationAdmin):
     inlines = [ImageInline]
     list_display = ['title', 'service', 'phone_number', 'mail']
     search_fields = ['title', 'service__name', 'phone_number', 'mail']
@@ -183,14 +196,14 @@ class ReviewAdmin(admin.ModelAdmin):
 
 admin.site.register(Review, ReviewAdmin)
 
-class ImageAdmin(admin.ModelAdmin):
-    list_display = ['image_tag']
-    readonly_fields = ['image_tag']
+# class ImageAdmin(admin.ModelAdmin):
+#     list_display = ['image_tag']
+#     readonly_fields = ['image_tag']
 
-    def image_tag(self, obj):
-        return '<img src="%s" style="max-width:200px;max-height:200px;" />' % obj.image.url
+#     def image_tag(self, obj):
+#         return '<img src="%s" style="max-width:200px;max-height:200px;" />' % obj.image.url
 
-    image_tag.allow_tags = True
-    image_tag.short_description = 'Image Preview'
+#     image_tag.allow_tags = True
+#     image_tag.short_description = 'Image Preview'
 
-admin.site.register(Image, ImageAdmin)
+# admin.site.register(Image, ImageAdmin)

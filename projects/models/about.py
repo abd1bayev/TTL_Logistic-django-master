@@ -15,8 +15,8 @@ class About(models.Model):
         return self.content
 
     class Meta:
-        verbose_name = _("О нас")
-        verbose_name_plural = _("О нас (множественное число)")
+        verbose_name = _("About")
+        verbose_name_plural = _("About")
 
 
 

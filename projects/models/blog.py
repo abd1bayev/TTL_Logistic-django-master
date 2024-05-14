@@ -31,12 +31,6 @@ class Blog(BaseModel):
         blank=True
     )
 
-    contact_information = models.TextField(
-        verbose_name=_("Contact Information"),
-        help_text=_("Contact information for the blog post"),
-        null=True,
-        blank=True
-    )
 
     slug = models.SlugField(
         max_length=200,

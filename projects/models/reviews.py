@@ -84,8 +84,8 @@ class Review(models.Model):
     )
 
     class Meta:
-        verbose_name = _("Отзыв")
-        verbose_name_plural = _("Отзывы")
+        verbose_name = _("Online Application")
+        verbose_name_plural = _("Online Application")
 
     def __str__(self):
         return f"{self.title}: {self.title}"

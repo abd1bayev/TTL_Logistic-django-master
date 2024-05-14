@@ -14,7 +14,7 @@ class AboutTranslationOptions(TranslationOptions):
 
 @register(Blog)
 class BlogTranslationOptions(TranslationOptions):
-    fields = ('title', 'description', 'country', 'address', 'contact_information')
+    fields = ('title', 'description', 'country', 'address',)
 
 
 
@@ -22,9 +22,9 @@ class BlogTranslationOptions(TranslationOptions):
 
 @register(Service)
 class ServiceTranslationOptions(TranslationOptions):
-    fields = ('title', 'descriptions')
+    fields = ('title', 'descriptions',)
 
 
 @register(Review)
 class ReviewTranslationOptions(TranslationOptions):
-    fields = ('name', "description")
+    fields = ('name', "description",)
