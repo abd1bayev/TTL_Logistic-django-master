@@ -111,8 +111,8 @@ class Image(models.Model):
         verbose_name = _("Изображение")
         verbose_name_plural = _("Изображения")
 
-    def __str__(self):
-        return self.image.name
+    # def __str__(self):
+    #     return self.image.name
 
 
 # class Review_Image(models.Model):

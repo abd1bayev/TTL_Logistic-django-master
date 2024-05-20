@@ -28,8 +28,55 @@ class AboutAdmin(TranslationAdmin):
         return format_html(obj.content)
 
     content_as_html.short_description = 'Content'
+    
+    class Meta:
+        order = 1
 
 # admin.site.register(About_Image)  # Register the AboutImage model as well
+
+
+
+
+class ServiceImageInline(admin.TabularInline):
+    model = ServiceImage
+    extra = 1
+
+class ServiceAdmin(TranslationAdmin):
+    # Specify which fields to display in the admin list view
+    inlines = [ServiceImageInline]
+
+    list_display = ('title', 'display_short_description', 'display_images', 'created_time', 'updated_time')
+    prepopulated_fields = {"slug": ("title",)}
+
+    # Add TinyMCE editor for the 'descriptions' field
+    formfield_overrides = {
+        models.TextField: {'widget': TinyMCE()},
+    }
+
+
+    def display_short_description(self, obj):
+        # Use format_html to mark the short_description as safe HTML
+        return format_html(obj.descriptions)
+
+    # Define a method to display images in the admin list view
+    def display_images(self, obj, size=25):
+        image_tags = [f'<img src="{image.image.url}" alt="Image {image.id}" width="{100}" height="{100}">' for image in obj.images_service.all()]
+        return format_html(''.join(image_tags))
+
+    display_images.short_description = 'Images'  # Custom column name
+    display_short_description.short_description = 'Description'  # Custom column name
+
+    # Add filtering options
+    list_filter = ('created_time', 'updated_time')
+
+    # Add search fields
+    search_fields = ('title', 'descriptions')
+
+    class Meta:
+        order = 2
+
+# Register the Service model with the custom admin class
+admin.site.register(Service, ServiceAdmin)
 
 
 
@@ -74,115 +121,42 @@ class BlogAdmin(TranslationAdmin):
     # image_preview.short_description = _('Image Preview')  # Custom column name
 
     inlines = [ImageInline]  # Add ImageInline to allow adding images inline with Blog
+    
+    class Meta:
+        order = 3
 
 admin.site.register(Blog, BlogAdmin)
 
-class ContactInformationAdmin(admin.ModelAdmin):
-    list_display = ('address', 'phone_number', 'email')
-    search_fields = ('address', 'phone_number', 'email', 'landmark')
+# class ContactInformationAdmin(admin.ModelAdmin):
+#     list_display = ('address', 'phone_number', 'email')
+#     search_fields = ('address', 'phone_number', 'email', 'landmark')
 
-    fieldsets = (
-        (_('Contact Data'), {
-            'fields': ('country', 'city', 'address', 'phone_number', 'email')
-        }),
-        (_('Location Information'), {
-            'fields': ('landmark', 'latitude', 'longitude')
-        }),
-    )
+#     fieldsets = (
+#         (_('Contact Data'), {
+#             'fields': ('country', 'city', 'address', 'phone_number', 'email')
+#         }),
+#         (_('Location Information'), {
+#             'fields': ('landmark', 'latitude', 'longitude')
+#         }),
+#     )
 
-    def has_add_permission(self, request):
-        # Check if any address already exists in the database
-        return not ContactInformation.objects.exists()
+#     def has_add_permission(self, request):
+#         # Check if any address already exists in the database
+#         return not ContactInformation.objects.exists()
 
-    def has_delete_permission(self, request, obj=None):
-        # Disable the delete action to prevent deleting instances
-        return False
+#     def has_delete_permission(self, request, obj=None):
+#         # Disable the delete action to prevent deleting instances
+#         return False
 
-    def has_change_permission(self, request, obj=None):
-        # Allow change permission only for the existing address data
-        if obj is not None:
-            return ContactInformation.objects.filter(address=obj.address).exists()
-        return super().has_change_permission(request, obj)
+#     def has_change_permission(self, request, obj=None):
+#         # Allow change permission only for the existing address data
+#         if obj is not None:
+#             return ContactInformation.objects.filter(address=obj.address).exists()
+#         return super().has_change_permission(request, obj)
 
-admin.site.register(ContactInformation, ContactInformationAdmin)
-
-
-
-class ServiceImageInline(admin.TabularInline):
-    model = ServiceImage
-    extra = 1
-
-class ServiceAdmin(TranslationAdmin):
-    # Specify which fields to display in the admin list view
-    inlines = [ServiceImageInline]
-
-    list_display = ('title', 'display_short_description', 'display_images', 'created_time', 'updated_time')
-    prepopulated_fields = {"slug": ("title",)}
-
-    # Add TinyMCE editor for the 'descriptions' field
-    formfield_overrides = {
-        models.TextField: {'widget': TinyMCE()},
-    }
+# admin.site.register(ContactInformation, ContactInformationAdmin)
 
 
-    def display_short_description(self, obj):
-        # Use format_html to mark the short_description as safe HTML
-        return format_html(obj.descriptions)
-
-    # Define a method to display images in the admin list view
-    def display_images(self, obj, size=25):
-        image_tags = [f'<img src="{image.image.url}" alt="Image {image.id}" width="{100}" height="{100}">' for image in obj.images_service.all()]
-        return format_html(''.join(image_tags))
-
-    display_images.short_description = 'Images'  # Custom column name
-    display_short_description.short_description = 'Description'  # Custom column name
-
-    # Add filtering options
-    list_filter = ('created_time', 'updated_time')
-
-    # Add search fields
-    search_fields = ('title', 'descriptions')
-
-
-
-# Register the Service model with the custom admin class
-admin.site.register(Service, ServiceAdmin)
-
-# admin.site.register(ServiceImage)
-
-
-# class ServiceImageInline(admin.TabularInline):
-#     model = ServiceImage
-#     extra = 1
-
-# class ServiceAdmin(admin.ModelAdmin):
-#     inlines = [ServiceImageInline]
-#     prepopulated_fields = {'slug': ('title',)}
-
-# admin.site.register(Service, ServiceAdmin)
-# admin.site.register(ServiceImage)
-
-# class ReviewImageInline(admin.TabularInline):
-#     model = Review_Image
-#     extra = 1
-#
-# class ReviewAdmin(admin.ModelAdmin):
-#     inlines = [ReviewImageInline]
-#
-#     list_display = ('title', 'service', 'display_images')
-#
-#     formfield_overrides = {
-#         models.TextField: {'widget': TinyMCE()},
-#     }
-#
-#     def display_images(self, obj, size=25):
-#         image_tags = [f'<img src="{image.image.url}" alt="Image {image.id}" width="{100}" height="{100}">' for image in obj.images_review.all()]
-#         return format_html(''.join(image_tags))
-#
-#     display_images.short_description = 'Images'  # Custom column name
-#
-# admin.site.register(Review, ReviewAdmin)
-# admin.site.register(Review_Image)
 
 class ImageInline(admin.TabularInline):
     model = Image
@@ -190,20 +164,29 @@ class ImageInline(admin.TabularInline):
 
 class ReviewAdmin(TranslationAdmin):
     inlines = [ImageInline]
-    list_display = ['title', 'service', 'phone_number', 'mail']
+    list_display = ['title', 'service', 'phone_number', 'mail','display_images']
     search_fields = ['title', 'service__name', 'phone_number', 'mail']
     list_filter = ['service']
+    readonly_fields = ['display_images','title',]
 
+    
+    
+    def display_images(self, obj, size=25):
+        image_tags = [f'<img src="{image.image.url}" alt="Image {image.id}" width="{100}" height="{100}">' for image in obj.review_images.all()]
+        return format_html(''.join(image_tags))
+    
+    
+    display_images.short_description = 'Images'  # Custom column name
+
+
+
+
+    class Meta:
+        order = 4
+        
 admin.site.register(Review, ReviewAdmin)
 
-# class ImageAdmin(admin.ModelAdmin):
-#     list_display = ['image_tag']
-#     readonly_fields = ['image_tag']
 
-#     def image_tag(self, obj):
-#         return '<img src="%s" style="max-width:200px;max-height:200px;" />' % obj.image.url
 
-#     image_tag.allow_tags = True
-#     image_tag.short_description = 'Image Preview'
 
-# admin.site.register(Image, ImageAdmin)
+

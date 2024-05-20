@@ -116,7 +116,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = "ru"
+LANGUAGE_CODE = "en"
 
 TIME_ZONE = "Asia/Tashkent"
 
@@ -135,7 +135,7 @@ LANGUAGES = (
     ("uz", gettext("Uzbek")),  # Add Uzbek language entry
 )
 
-MODELTRANSLATION_DEFAULT_LANGUAGE = "ru"
+MODELTRANSLATION_DEFAULT_LANGUAGE = "en"
 MODELTRANSLATION_LANGUAGES = ("ru", "en", "uz")
 
 
