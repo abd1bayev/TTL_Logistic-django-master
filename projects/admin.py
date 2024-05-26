@@ -167,21 +167,32 @@ class ImageInline(admin.TabularInline):
     model = Image
     extra = 1
 
-class ReviewAdmin(TranslationAdmin):
+class ReviewAdmin(admin.ModelAdmin):
     inlines = [ImageInline]
     list_display = ['title', 'service', 'phone_number', 'mail','display_images']
     search_fields = ['title', 'service__name', 'phone_number', 'mail']
     list_filter = ['service']
     readonly_fields = ['display_images','title',]
 
-    
+
     
     def display_images(self, obj, size=25):
         image_tags = [f'<img src="{image.image.url}" alt="Image {image.id}" width="{100}" height="{100}">' for image in obj.review_images.all()]
         return format_html(''.join(image_tags))
+        
+    def has_add_permission(self, request):
+        return request.user.groups.filter(name='display_images').exists()
+
+    def has_change_permission(self, request, obj=None):
+        return request.user.groups.filter(name='display_images').exists()
+
+    def has_delete_permission(self, request, obj=None):
+        return request.user.groups.filter(name='display_images').exists()
     
+
     
     display_images.short_description = 'Images'  # Custom column name
+
 
 
 

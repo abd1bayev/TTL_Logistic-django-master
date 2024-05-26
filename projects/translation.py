@@ -25,6 +25,6 @@ class ServiceTranslationOptions(TranslationOptions):
     fields = ('title', 'descriptions',)
 
 
-@register(Review)
-class ReviewTranslationOptions(TranslationOptions):
-    fields = ('name', "description",)
+# @register(Review)
+# class ReviewTranslationOptions(TranslationOptions):
+#     fields = ('name', "description",)
