@@ -4,6 +4,7 @@ from django.utils.html import format_html
 from django.utils.translation import gettext_lazy as _
 from modeltranslation.admin import TranslationAdmin
 from tinymce.widgets import TinyMCE
+from django.utils.text import Truncator
 
 from .models import About, ContactInformation, About_Image, Review, Image
 from .models.blog import Blog, Blog_Image  
@@ -88,23 +89,27 @@ class ImageInline(admin.TabularInline):
     extra = 1  # Number of empty forms to display
 
 class BlogAdmin(TranslationAdmin):
-    list_display = ('title','address_as_html','description_as_html', 'formatted_date_created',)  # Customize the displayed fields
+    list_display = ('title', 'description_as_html', 'formatted_date_created',)  # Customize the displayed fields | 'address_as_html',
 
     def formatted_date_created(self, obj):
         return obj.created_time.strftime('%Y-%m-%d %H:%M:%S')  # Assuming created_time is the field name
     formatted_date_created.short_description = _('Date Created')  # Custom column name
 
+    # def description_as_html(self, obj):
+    #     return format_html(obj.description)
+
+    # description_as_html.short_description = 'Description'
     def description_as_html(self, obj):
-        return format_html(obj.description)
-
-    description_as_html.short_description = 'Description'
+        truncated_description = Truncator(obj.description).chars(50, truncate='...')  # Truncate the description to 50 characters
+        return format_html(truncated_description)
+    description_as_html.short_description = _('Description')
     
-    def address_as_html(self, obj):
-        return format_html(obj.address)
+    # def address_as_html(self, obj):
+    #     return format_html(obj.address)
 
-    address_as_html.short_description = 'Address'
+    # address_as_html.short_description = 'Address'
     
-    search_fields = ('title', 'description', 'country', 'address',)  # Add fields to search
+    search_fields = ('title', 'description',)  # Add fields to search | 'country', 'address',
     prepopulated_fields = {"slug": ("title",)}  # Automatically populate the slug from the title
 
     formfield_overrides = {

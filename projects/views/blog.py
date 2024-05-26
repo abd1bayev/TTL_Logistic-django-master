@@ -32,5 +32,5 @@ class BlogRetrieveView(generics.RetrieveAPIView):
     def get_object(self):
         slug = self.kwargs['slug']  # Get the slug from the URL
         news = get_object_or_404(Blog, slug=slug)
-        news.increment_view_count()
+        # news.increment_view_count()
         return news

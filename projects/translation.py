@@ -14,7 +14,7 @@ class AboutTranslationOptions(TranslationOptions):
 
 @register(Blog)
 class BlogTranslationOptions(TranslationOptions):
-    fields = ('title', 'description', 'country', 'address',)
+    fields = ('title', 'description',) #  'country', 'address',
 
 
 

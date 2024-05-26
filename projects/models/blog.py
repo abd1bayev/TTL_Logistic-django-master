@@ -16,20 +16,20 @@ class Blog(BaseModel):
         help_text=_("Brief description of the blog post")
     )
 
-    country = models.CharField(
-        max_length=255,
-        verbose_name=_("Country"),
-        help_text=_("Country of the blog post"),
-        null=True,
-        blank=True
-    )
+    # country = models.CharField(
+    #     max_length=255,
+    #     verbose_name=_("Country"),
+    #     help_text=_("Country of the blog post"),
+    #     null=True,
+    #     blank=True
+    # )
 
-    address = models.TextField(
-        verbose_name=_("Address"),
-        help_text=_("Address of the blog post"),
-        null=True,
-        blank=True
-    )
+    # address = models.TextField(
+    #     verbose_name=_("Address"),
+    #     help_text=_("Address of the blog post"),
+    #     null=True,
+    #     blank=True
+    # )
 
 
     slug = models.SlugField(
@@ -40,14 +40,14 @@ class Blog(BaseModel):
         help_text=_("Slug for the URL of the blog post. Automatically generated from the title.")
     )
 
-    view_count = models.PositiveIntegerField(default=0, verbose_name=_("View Count"))
+    # view_count = models.PositiveIntegerField(default=0, verbose_name=_("View Count"))
 
     def __str__(self):
         return self.title
 
-    def increment_view_count(self):
-        self.view_count += 1
-        self.save(update_fields=['view_count'])
+    # def increment_view_count(self):
+    #     self.view_count += 1
+    #     self.save(update_fields=['view_count'])
 
     def save(self, *args, **kwargs):
         if not self.slug:
